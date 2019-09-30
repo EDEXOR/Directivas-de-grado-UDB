@@ -29,184 +29,145 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            this.Sis = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.pcbIcono1 = new System.Windows.Forms.PictureBox();
+            this.lblOlof = new System.Windows.Forms.Label();
+            this.pcbLogo = new System.Windows.Forms.PictureBox();
+            this.lblDescripcion1 = new System.Windows.Forms.Label();
+            this.lblUDB = new System.Windows.Forms.Label();
+            this.lblCopyright = new System.Windows.Forms.Label();
+            this.lbl2019 = new System.Windows.Forms.Label();
+            this.lblDescripcion2 = new System.Windows.Forms.Label();
+            this.pcbExtra = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbIcono1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbExtra)).BeginInit();
             this.SuspendLayout();
             // 
-            // Sis
+            // lblTitulo
             // 
-            this.Sis.AutoSize = true;
-            this.Sis.BackColor = System.Drawing.Color.Transparent;
-            this.Sis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sis.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sis.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Sis.Location = new System.Drawing.Point(153, 30);
-            this.Sis.Name = "Sis";
-            this.Sis.Size = new System.Drawing.Size(158, 44);
-            this.Sis.TabIndex = 0;
-            this.Sis.Text = "Sistema";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTitulo.Location = new System.Drawing.Point(153, 30);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(216, 132);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Sistema de\r\nDirectivas\r\nde Grado";
             // 
-            // label1
+            // pcbIcono1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(153, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 44);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "de directivas";
+            this.pcbIcono1.BackColor = System.Drawing.Color.Transparent;
+            this.pcbIcono1.Image = ((System.Drawing.Image)(resources.GetObject("pcbIcono1.Image")));
+            this.pcbIcono1.Location = new System.Drawing.Point(27, 39);
+            this.pcbIcono1.Name = "pcbIcono1";
+            this.pcbIcono1.Size = new System.Drawing.Size(120, 120);
+            this.pcbIcono1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbIcono1.TabIndex = 3;
+            this.pcbIcono1.TabStop = false;
             // 
-            // label2
+            // lblOlof
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(153, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 44);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "de grado";
+            this.lblOlof.AutoSize = true;
+            this.lblOlof.BackColor = System.Drawing.Color.Transparent;
+            this.lblOlof.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblOlof.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOlof.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblOlof.Location = new System.Drawing.Point(498, 46);
+            this.lblOlof.Name = "lblOlof";
+            this.lblOlof.Size = new System.Drawing.Size(180, 56);
+            this.lblOlof.TabIndex = 4;
+            this.lblOlof.Text = "Centro Escolar\r\nOlof Palme";
+            this.lblOlof.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // pcbLogo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pcbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
+            this.pcbLogo.Location = new System.Drawing.Point(27, 214);
+            this.pcbLogo.Name = "pcbLogo";
+            this.pcbLogo.Size = new System.Drawing.Size(79, 82);
+            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbLogo.TabIndex = 6;
+            this.pcbLogo.TabStop = false;
             // 
-            // label3
+            // lblDescripcion1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(498, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 28);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Centro escolar";
+            this.lblDescripcion1.AutoSize = true;
+            this.lblDescripcion1.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescripcion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDescripcion1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDescripcion1.Location = new System.Drawing.Point(23, 299);
+            this.lblDescripcion1.Name = "lblDescripcion1";
+            this.lblDescripcion1.Size = new System.Drawing.Size(408, 20);
+            this.lblDescripcion1.TabIndex = 7;
+            this.lblDescripcion1.Text = "Desarrollado por alumnos de la universidad Don Bosco";
             // 
-            // label4
+            // lblUDB
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(509, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 28);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "OLOF PALME";
+            this.lblUDB.AutoSize = true;
+            this.lblUDB.BackColor = System.Drawing.Color.Transparent;
+            this.lblUDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblUDB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUDB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblUDB.Location = new System.Drawing.Point(113, 228);
+            this.lblUDB.Name = "lblUDB";
+            this.lblUDB.Size = new System.Drawing.Size(198, 20);
+            this.lblUDB.TabIndex = 8;
+            this.lblUDB.Text = "Universidad Don Bosco ® ";
             // 
-            // pictureBox2
+            // lblCopyright
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(27, 214);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(79, 82);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.lblCopyright.AutoSize = true;
+            this.lblCopyright.BackColor = System.Drawing.Color.Transparent;
+            this.lblCopyright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCopyright.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyright.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCopyright.Location = new System.Drawing.Point(113, 248);
+            this.lblCopyright.Name = "lblCopyright";
+            this.lblCopyright.Size = new System.Drawing.Size(233, 20);
+            this.lblCopyright.TabIndex = 9;
+            this.lblCopyright.Text = "Todos los derechos reservados";
             // 
-            // label5
+            // lbl2019
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(23, 299);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(408, 20);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Desarrollado por alumnos de la universidad Don Bosco";
+            this.lbl2019.AutoSize = true;
+            this.lbl2019.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2019.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl2019.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2019.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl2019.Location = new System.Drawing.Point(113, 268);
+            this.lbl2019.Name = "lbl2019";
+            this.lbl2019.Size = new System.Drawing.Size(45, 20);
+            this.lbl2019.TabIndex = 10;
+            this.lbl2019.Text = "2019 ";
             // 
-            // label6
+            // lblDescripcion2
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(113, 228);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 20);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Universidad Don Bosco ® ";
+            this.lblDescripcion2.AutoSize = true;
+            this.lblDescripcion2.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescripcion2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDescripcion2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDescripcion2.Location = new System.Drawing.Point(23, 321);
+            this.lblDescripcion2.Name = "lblDescripcion2";
+            this.lblDescripcion2.Size = new System.Drawing.Size(524, 20);
+            this.lblDescripcion2.TabIndex = 11;
+            this.lblDescripcion2.Text = "Programación Orientada a Objetos y Modelamiento de Base de Datos";
             // 
-            // label7
+            // pcbExtra
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(113, 248);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(233, 20);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Todos los derechos reservados";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(113, 268);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 20);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "2019 ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(23, 321);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(517, 20);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Programacion orientada a objetos Y Modelamiento de base de datos";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(527, 161);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(114, 107);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
+            this.pcbExtra.BackColor = System.Drawing.Color.Transparent;
+            this.pcbExtra.Image = ((System.Drawing.Image)(resources.GetObject("pcbExtra.Image")));
+            this.pcbExtra.Location = new System.Drawing.Point(527, 161);
+            this.pcbExtra.Name = "pcbExtra";
+            this.pcbExtra.Size = new System.Drawing.Size(114, 107);
+            this.pcbExtra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbExtra.TabIndex = 12;
+            this.pcbExtra.TabStop = false;
             // 
             // Inicio
             // 
@@ -216,25 +177,22 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(728, 350);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Sis);
+            this.Controls.Add(this.pcbExtra);
+            this.Controls.Add(this.lblDescripcion2);
+            this.Controls.Add(this.lbl2019);
+            this.Controls.Add(this.lblCopyright);
+            this.Controls.Add(this.lblUDB);
+            this.Controls.Add(this.lblDescripcion1);
+            this.Controls.Add(this.pcbLogo);
+            this.Controls.Add(this.lblOlof);
+            this.Controls.Add(this.pcbIcono1);
+            this.Controls.Add(this.lblTitulo);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.inicio_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbIcono1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbExtra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,19 +200,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Sis;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.PictureBox pcbIcono1;
+        private System.Windows.Forms.Label lblOlof;
+        private System.Windows.Forms.PictureBox pcbLogo;
+        private System.Windows.Forms.Label lblDescripcion1;
+        private System.Windows.Forms.Label lblUDB;
+        private System.Windows.Forms.Label lblCopyright;
+        private System.Windows.Forms.Label lbl2019;
+        private System.Windows.Forms.Label lblDescripcion2;
+        private System.Windows.Forms.PictureBox pcbExtra;
     }
 }
 

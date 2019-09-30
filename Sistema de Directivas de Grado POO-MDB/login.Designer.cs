@@ -29,267 +29,236 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Sis = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.pcbIcono1 = new System.Windows.Forms.PictureBox();
+            this.lblIniciarSesion = new System.Windows.Forms.Label();
+            this.lbl2019 = new System.Windows.Forms.Label();
+            this.lblCopyright = new System.Windows.Forms.Label();
+            this.lblUDB = new System.Windows.Forms.Label();
+            this.pcbLogo = new System.Windows.Forms.PictureBox();
+            this.lblContrasena = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnAcercaDe = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbIcono1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // lblTitulo
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(32, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 44);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "de grado";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTitulo.Location = new System.Drawing.Point(32, 34);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(402, 88);
+            this.lblTitulo.TabIndex = 3;
+            this.lblTitulo.Text = "Sistema de Directivas\r\nde Grado";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // pcbIcono1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(180, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 44);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "de directivas";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.pcbIcono1.BackColor = System.Drawing.Color.Transparent;
+            this.pcbIcono1.Image = ((System.Drawing.Image)(resources.GetObject("pcbIcono1.Image")));
+            this.pcbIcono1.Location = new System.Drawing.Point(456, 36);
+            this.pcbIcono1.Name = "pcbIcono1";
+            this.pcbIcono1.Size = new System.Drawing.Size(100, 86);
+            this.pcbIcono1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbIcono1.TabIndex = 6;
+            this.pcbIcono1.TabStop = false;
             // 
-            // Sis
+            // lblIniciarSesion
             // 
-            this.Sis.AutoSize = true;
-            this.Sis.BackColor = System.Drawing.Color.Transparent;
-            this.Sis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sis.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Sis.Location = new System.Drawing.Point(32, 34);
-            this.Sis.Name = "Sis";
-            this.Sis.Size = new System.Drawing.Size(158, 44);
-            this.Sis.TabIndex = 3;
-            this.Sis.Text = "Sistema";
+            this.lblIniciarSesion.AutoSize = true;
+            this.lblIniciarSesion.BackColor = System.Drawing.Color.Transparent;
+            this.lblIniciarSesion.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIniciarSesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblIniciarSesion.Location = new System.Drawing.Point(197, 174);
+            this.lblIniciarSesion.Name = "lblIniciarSesion";
+            this.lblIniciarSesion.Size = new System.Drawing.Size(196, 36);
+            this.lblIniciarSesion.TabIndex = 7;
+            this.lblIniciarSesion.Text = "Iniciar sesión";
             // 
-            // pictureBox1
+            // lbl2019
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(456, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.lbl2019.AutoSize = true;
+            this.lbl2019.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2019.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl2019.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2019.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl2019.Location = new System.Drawing.Point(98, 575);
+            this.lbl2019.Name = "lbl2019";
+            this.lbl2019.Size = new System.Drawing.Size(45, 20);
+            this.lbl2019.TabIndex = 14;
+            this.lbl2019.Text = "2019 ";
             // 
-            // label3
+            // lblCopyright
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(197, 174);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 36);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Iniciar Sesion";
+            this.lblCopyright.AutoSize = true;
+            this.lblCopyright.BackColor = System.Drawing.Color.Transparent;
+            this.lblCopyright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCopyright.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyright.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCopyright.Location = new System.Drawing.Point(98, 555);
+            this.lblCopyright.Name = "lblCopyright";
+            this.lblCopyright.Size = new System.Drawing.Size(233, 20);
+            this.lblCopyright.TabIndex = 13;
+            this.lblCopyright.Text = "Todos los derechos reservados";
             // 
-            // label8
+            // lblUDB
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(98, 575);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 20);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "2019 ";
+            this.lblUDB.AutoSize = true;
+            this.lblUDB.BackColor = System.Drawing.Color.Transparent;
+            this.lblUDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblUDB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUDB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblUDB.Location = new System.Drawing.Point(98, 535);
+            this.lblUDB.Name = "lblUDB";
+            this.lblUDB.Size = new System.Drawing.Size(198, 20);
+            this.lblUDB.TabIndex = 12;
+            this.lblUDB.Text = "Universidad Don Bosco ® ";
             // 
-            // label7
+            // pcbLogo
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(98, 555);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(233, 20);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Todos los derechos reservados";
+            this.pcbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
+            this.pcbLogo.Location = new System.Drawing.Point(12, 521);
+            this.pcbLogo.Name = "pcbLogo";
+            this.pcbLogo.Size = new System.Drawing.Size(79, 82);
+            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbLogo.TabIndex = 11;
+            this.pcbLogo.TabStop = false;
             // 
-            // label6
+            // lblContrasena
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(98, 535);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Universidad Don Bosco ® ";
+            this.lblContrasena.AutoSize = true;
+            this.lblContrasena.BackColor = System.Drawing.Color.Transparent;
+            this.lblContrasena.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContrasena.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblContrasena.Location = new System.Drawing.Point(149, 343);
+            this.lblContrasena.Name = "lblContrasena";
+            this.lblContrasena.Size = new System.Drawing.Size(190, 36);
+            this.lblContrasena.TabIndex = 15;
+            this.lblContrasena.Text = "Contraseña:";
             // 
-            // pictureBox2
+            // lblCorreo
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 521);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(79, 82);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCorreo.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCorreo.Location = new System.Drawing.Point(149, 239);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(121, 36);
+            this.lblCorreo.TabIndex = 16;
+            this.lblCorreo.Text = "Correo:";
             // 
-            // label4
+            // txtCorreo
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(149, 343);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 36);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Contraseña:";
+            this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(155, 278);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(263, 31);
+            this.txtCorreo.TabIndex = 17;
             // 
-            // label5
+            // txtPassword
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(149, 239);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 36);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Correo:";
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(155, 382);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(268, 31);
+            this.txtPassword.TabIndex = 18;
             // 
-            // textBox1
+            // btnEntrar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(155, 278);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 31);
-            this.textBox1.TabIndex = 17;
+            this.btnEntrar.BackColor = System.Drawing.Color.OliveDrab;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEntrar.Location = new System.Drawing.Point(229, 435);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(110, 45);
+            this.btnEntrar.TabIndex = 20;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // btnAcercaDe
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(155, 382);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(268, 31);
-            this.textBox2.TabIndex = 18;
+            this.btnAcercaDe.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcercaDe.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcercaDe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAcercaDe.Location = new System.Drawing.Point(352, 550);
+            this.btnAcercaDe.Name = "btnAcercaDe";
+            this.btnAcercaDe.Size = new System.Drawing.Size(123, 45);
+            this.btnAcercaDe.TabIndex = 21;
+            this.btnAcercaDe.Text = "Acerca de..";
+            this.btnAcercaDe.UseVisualStyleBackColor = false;
+            this.btnAcercaDe.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnSalir
             // 
-            this.button2.BackColor = System.Drawing.Color.OliveDrab;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(229, 435);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 45);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Entrar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(352, 550);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 45);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Acerca de..";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Brown;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(495, 550);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 45);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSalir.BackColor = System.Drawing.Color.Brown;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalir.Location = new System.Drawing.Point(495, 550);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(87, 45);
+            this.btnSalir.TabIndex = 22;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.button1_Click);
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 615);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Sis);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnAcercaDe);
+            this.Controls.Add(this.btnEntrar);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.lblCorreo);
+            this.Controls.Add(this.lblContrasena);
+            this.Controls.Add(this.lbl2019);
+            this.Controls.Add(this.lblCopyright);
+            this.Controls.Add(this.lblUDB);
+            this.Controls.Add(this.pcbLogo);
+            this.Controls.Add(this.lblIniciarSesion);
+            this.Controls.Add(this.pcbIcono1);
+            this.Controls.Add(this.lblTitulo);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inicio de sesion";
+            this.Text = "Inicio de sesión";
             this.Load += new System.EventHandler(this.login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbIcono1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label Sis;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.PictureBox pcbIcono1;
+        private System.Windows.Forms.Label lblIniciarSesion;
+        private System.Windows.Forms.Label lbl2019;
+        private System.Windows.Forms.Label lblCopyright;
+        private System.Windows.Forms.Label lblUDB;
+        private System.Windows.Forms.PictureBox pcbLogo;
+        private System.Windows.Forms.Label lblContrasena;
+        private System.Windows.Forms.Label lblCorreo;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Button btnAcercaDe;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
