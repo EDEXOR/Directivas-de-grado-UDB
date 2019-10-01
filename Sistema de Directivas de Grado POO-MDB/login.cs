@@ -16,6 +16,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         {
             InitializeComponent();
         }
+        Validaciones val = new Validaciones();
 
         private void login_Load(object sender, EventArgs e)
         {
@@ -33,11 +34,37 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             Creditos form_credi = new Creditos();
             form_credi.Show();
             this.Hide();
+            Validaciones val = new Validaciones();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+
+        private void TxtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.ValidarPass(e, txtPassword);
+        }
+
+        private void TxtCorreo_Leave(object sender, EventArgs e)
+        {
+            if (val.ValidarEmail(txtCorreo.Text))
+            {
+                //si es correcto no debe hacer nada
+            }
+            else
+            {
+                /*sino es correcto que envíe este mensaje y se posicione para
+verificar recuerde que se activará la validación al dar click en otro textbox o
+simplemente dejar o salir de esa casilla de email*/
+
+                MessageBox.Show("Dirección de correo no válida");
+                txtCorreo.SelectAll(); //selecciona todo lo de la casilla
+                txtCorreo.Focus(); //se posiciona ahí de nuevo
+            }
+           
         }
     }
 }

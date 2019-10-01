@@ -12,3 +12,15 @@ C:\Users\EDWARD\Desktop\Proyectos de catedra\Sistema de Directivas de Grado POO-
 C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.exe.config
 C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.exe
 C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.pdb
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.exe.config
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.exe
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.pdb
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csprojAssemblyReference.cache
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Creditos.resources
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Inicio.resources
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.login.resources
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.resources
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.GenerateResource.cache
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.CoreCompileInputs.cache
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.exe
+C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.pdb
