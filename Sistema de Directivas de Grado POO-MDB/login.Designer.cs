@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pcbIcono1 = new System.Windows.Forms.PictureBox();
@@ -43,8 +44,10 @@
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnAcercaDe = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbIcono1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -165,7 +168,7 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(263, 31);
             this.txtCorreo.TabIndex = 17;
-            this.txtCorreo.Leave += new System.EventHandler(this.TxtCorreo_Leave);
+            this.txtCorreo.Validated += new System.EventHandler(this.TxtCorreo_Validated);
             // 
             // txtPassword
             // 
@@ -190,6 +193,7 @@
             this.btnEntrar.TabIndex = 20;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
             // 
             // btnAcercaDe
             // 
@@ -219,6 +223,10 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.button1_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,6 +252,7 @@
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbIcono1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +273,6 @@
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnAcercaDe;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

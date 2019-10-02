@@ -17,16 +17,11 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             InitializeComponent();
         }
         Validaciones val = new Validaciones();
-
+static bool flag = false;
         private void login_Load(object sender, EventArgs e)
         {
             Inicio form1 = new Inicio();
             form1.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -48,23 +43,33 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             val.ValidarPass(e, txtPassword);
         }
 
-        private void TxtCorreo_Leave(object sender, EventArgs e)
+
+        private void TxtCorreo_Validated(object sender, EventArgs e)
         {
             if (val.ValidarEmail(txtCorreo.Text))
             {
-                //si es correcto no debe hacer nada
+                flag = true;
+                errorProvider1.Clear();
             }
             else
             {
-                /*sino es correcto que envíe este mensaje y se posicione para
-verificar recuerde que se activará la validación al dar click en otro textbox o
-simplemente dejar o salir de esa casilla de email*/
-
-                MessageBox.Show("Dirección de correo no válida");
+                flag = false;
+                errorProvider1.SetError(txtCorreo, "Dirección no válida");
                 txtCorreo.SelectAll(); //selecciona todo lo de la casilla
                 txtCorreo.Focus(); //se posiciona ahí de nuevo
-            }
-           
+            }
+        }
+
+        private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+            if (flag)
+            {
+                MessageBox.Show("Agregar acá login");
+            }
+            else
+            {
+                MessageBox.Show("Error validando...");
+            }
         }
     }
 }
