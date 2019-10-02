@@ -10,23 +10,11 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    public partial class Creditos : Form
+    public partial class AgregarAlumno : Form
     {
-        public Creditos()
+        public AgregarAlumno()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Login form_log = new Login();
-            form_log.Show();
-            this.Hide();
         }
     }
 }

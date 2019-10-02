@@ -1,6 +1,6 @@
 ﻿namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    partial class login
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pcbIcono1 = new System.Windows.Forms.PictureBox();
             this.lblIniciarSesion = new System.Windows.Forms.Label();
@@ -193,7 +193,7 @@
             this.btnEntrar.TabIndex = 20;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnAcercaDe
             // 
@@ -207,7 +207,7 @@
             this.btnAcercaDe.TabIndex = 21;
             this.btnAcercaDe.Text = "Acerca de..";
             this.btnAcercaDe.UseVisualStyleBackColor = false;
-            this.btnAcercaDe.Click += new System.EventHandler(this.button3_Click);
+            this.btnAcercaDe.Click += new System.EventHandler(this.btnAcercaDe_Click);
             // 
             // btnSalir
             // 
@@ -221,16 +221,17 @@
             this.btnSalir.TabIndex = 22;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.button1_Click);
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // login
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(594, 615);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAcercaDe);
@@ -246,10 +247,11 @@
             this.Controls.Add(this.lblIniciarSesion);
             this.Controls.Add(this.pcbIcono1);
             this.Controls.Add(this.lblTitulo);
-            this.Name = "login";
+            this.MaximizeBox = false;
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesión";
-            this.Load += new System.EventHandler(this.login_Load);
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbIcono1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

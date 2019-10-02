@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,21 +11,21 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    public partial class login : Form
+    public partial class Login : Form
     {
-        public login()
+        public Login()
         {
             InitializeComponent();
         }
         Validaciones val = new Validaciones();
-static bool flag = false;
-        private void login_Load(object sender, EventArgs e)
+        static bool flag = false;
+        private void Login_Load(object sender, EventArgs e)
         {
             Inicio form1 = new Inicio();
             form1.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnAcercaDe_Click(object sender, EventArgs e)
         {
             Creditos form_credi = new Creditos();
             form_credi.Show();
@@ -32,7 +33,7 @@ static bool flag = false;
             Validaciones val = new Validaciones();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -60,15 +61,30 @@ static bool flag = false;
             }
         }
 
-        private void BtnEntrar_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
             if (flag)
             {
-                MessageBox.Show("Agregar acá login");
+                SqlConnection conexion = Conexion.conectar();
+                SqlCommand cm = new SqlCommand("SELECT * FROM Usuarios WHERE Correo=@correo AND Clave=@clave", conexion);
+                cm.Parameters.Clear();
+                cm.Parameters.AddWithValue("@correo", txtCorreo.Text);
+                cm.Parameters.AddWithValue("@clave", txtPassword.Text);
+                SqlDataReader reader = cm.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    MessageBox.Show("Sí");
+                }else
+                {
+                    MessageBox.Show("No");
+                }
+
+                conexion.Close();
             }
             else
             {
-                MessageBox.Show("Error validando...");
+                MessageBox.Show("Debe ingresar los datos solicitados", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

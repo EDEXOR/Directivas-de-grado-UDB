@@ -102,9 +102,9 @@
             this.lblDescripcion1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDescripcion1.Location = new System.Drawing.Point(23, 299);
             this.lblDescripcion1.Name = "lblDescripcion1";
-            this.lblDescripcion1.Size = new System.Drawing.Size(408, 20);
+            this.lblDescripcion1.Size = new System.Drawing.Size(410, 20);
             this.lblDescripcion1.TabIndex = 7;
-            this.lblDescripcion1.Text = "Desarrollado por alumnos de la universidad Don Bosco";
+            this.lblDescripcion1.Text = "Desarrollado por alumnos de la Universidad Don Bosco";
             // 
             // lblUDB
             // 
@@ -174,6 +174,7 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(728, 350);
             this.ControlBox = false;
@@ -187,6 +188,7 @@
             this.Controls.Add(this.lblOlof);
             this.Controls.Add(this.pcbIcono1);
             this.Controls.Add(this.lblTitulo);
+            this.MaximizeBox = false;
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.inicio_Load);

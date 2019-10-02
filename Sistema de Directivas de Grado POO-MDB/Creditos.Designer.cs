@@ -188,6 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(853, 379);
             this.Controls.Add(this.lblEmmanuel);
             this.Controls.Add(this.pcbEmmanuel);
@@ -202,6 +203,7 @@
             this.Controls.Add(this.pcbDavid);
             this.Controls.Add(this.pcbDiego);
             this.Controls.Add(this.btnRegresar);
+            this.MaximizeBox = false;
             this.Name = "Creditos";
             this.Text = "Créditos";
             ((System.ComponentModel.ISupportInitialize)(this.pcbDiego)).EndInit();

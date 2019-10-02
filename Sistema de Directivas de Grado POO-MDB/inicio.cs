@@ -20,27 +20,18 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private void inicio_Load(object sender, EventArgs e)
         {
 
-            Clock.Interval = 3000;
+            Clock.Interval = 5000;
             Clock.Start();
             Clock.Tick += new EventHandler(Timer_Tick);
             
 
         }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-        
-        }
         public void Timer_Tick(object sender, EventArgs eArgs)
         {
             Clock.Stop();
-            login form_log = new login();
-            form_log.Show();
-
-
-            Inicio form1 = new Inicio();
+            Login form_log = new Login();
             this.Hide();
-
+            form_log.Show();           
         }
 
         
