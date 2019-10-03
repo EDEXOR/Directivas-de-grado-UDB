@@ -74,10 +74,12 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
                 if (reader.Read())
                 {
-                    MessageBox.Show("Sí");
+                    AgregarAlumno form = new AgregarAlumno();
+                    form.Show();
+                    this.Hide();
                 }else
                 {
-                    MessageBox.Show("No");
+                    MessageBox.Show("Credenciales incorrectas", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 conexion.Close();

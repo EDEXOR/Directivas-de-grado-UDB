@@ -88,27 +88,33 @@
             this.cmbGrado.Name = "cmbGrado";
             this.cmbGrado.Size = new System.Drawing.Size(52, 29);
             this.cmbGrado.TabIndex = 4;
+            this.cmbGrado.SelectedIndexChanged += new System.EventHandler(this.cmbGrado_SelectedIndexChanged);
             // 
             // cmbSeccion
             // 
+            this.cmbSeccion.Enabled = false;
             this.cmbSeccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSeccion.FormattingEnabled = true;
             this.cmbSeccion.Location = new System.Drawing.Point(388, 186);
             this.cmbSeccion.Name = "cmbSeccion";
             this.cmbSeccion.Size = new System.Drawing.Size(52, 29);
             this.cmbSeccion.TabIndex = 5;
+            this.cmbSeccion.SelectedIndexChanged += new System.EventHandler(this.cmbSeccion_SelectedIndexChanged);
             // 
             // cmbAlumno
             // 
+            this.cmbAlumno.Enabled = false;
             this.cmbAlumno.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAlumno.FormattingEnabled = true;
             this.cmbAlumno.Location = new System.Drawing.Point(289, 235);
             this.cmbAlumno.Name = "cmbAlumno";
             this.cmbAlumno.Size = new System.Drawing.Size(182, 25);
             this.cmbAlumno.TabIndex = 6;
+            this.cmbAlumno.SelectedIndexChanged += new System.EventHandler(this.cmbAlumno_SelectedIndexChanged);
             // 
             // cmbCargo
             // 
+            this.cmbCargo.Enabled = false;
             this.cmbCargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCargo.FormattingEnabled = true;
             this.cmbCargo.Location = new System.Drawing.Point(289, 283);
@@ -147,6 +153,7 @@
             this.MaximizeBox = false;
             this.Name = "AgregarAlumno";
             this.Text = "Asignar cargo a alumno";
+            this.Load += new System.EventHandler(this.AgregarAlumno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
