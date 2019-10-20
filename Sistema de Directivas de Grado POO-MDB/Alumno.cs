@@ -11,13 +11,13 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private string idAlumno;
         private string idPadre;
         private string idPersona;
-        private string idGrado;
+        private string idSeccion;
         private string carnet;
 
         public string IdAlumno { get => idAlumno; set => idAlumno = value; }
         public string IdPadre { get => idPadre; set => idPadre = value; }
         public string IdPersona { get => idPersona; set => idPersona = value; }
-        public string IdGrado { get => idGrado; set => idGrado = value; }
+        public string IdSeccion { get => idSeccion; set => idSeccion = value; }
         public string Carnet { get => carnet; set => carnet = value; }
     }
 }

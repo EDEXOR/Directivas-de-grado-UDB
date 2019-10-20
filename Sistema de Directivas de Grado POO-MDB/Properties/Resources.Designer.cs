@@ -63,6 +63,16 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agregar_estudiante {
+            get {
+                object obj = ResourceManager.GetObject("agregar_estudiante", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icono_alumno {
             get {
                 object obj = ResourceManager.GetObject("icono-alumno", resourceCulture);
