@@ -38,3 +38,16 @@ C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Gra
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.pdb
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AgregarAlumno.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarAlumno.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AgregarAlumno.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Creditos.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Inicio.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Login.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarAlumno.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.GenerateResource.Cache
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.exe
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.pdb
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csprojAssemblyReference.cache
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.CoreCompileInputs.cache
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.menu.resources
+C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AlumnosForm.resources

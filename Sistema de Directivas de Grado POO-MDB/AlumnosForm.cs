@@ -2,23 +2,28 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    public partial class AgregarAlumno : Form
+    public partial class AlumnosForm : Form
     {
-        public AgregarAlumno()
+        public AlumnosForm()
         {
             InitializeComponent();
         }
 
-        private void AgregarAlumno_Load(object sender, EventArgs e)
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AlumnosForm_Load(object sender, EventArgs e)
         {
             SqlConnection conexion = Conexion.conectar();
             SqlCommand comando = new SqlCommand("SELECT Grado FROM Grados", conexion);
@@ -31,7 +36,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             conexion.Close();
         }
 
-        private void cmbGrado_SelectedIndexChanged(object sender, EventArgs e)
+        private void CmbGrado_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbSeccion.Items.Clear();
             cmbSeccion.Enabled = true;
@@ -47,41 +52,25 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             conexion.Close();
         }
 
-        private void cmbSeccion_SelectedIndexChanged(object sender, EventArgs e)
+        private void CmbSeccion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbAlumno.Items.Clear();
-            cmbAlumno.Enabled = true;
+
+
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT alu.IdPersona, per.IdPersona, alu.IdSeccion, sec.IdSeccion, alu.Carnet, per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido FROM Alumnos alu" +
+            SqlCommand comando = new SqlCommand("SELECT  alu.Carnet, per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido FROM Alumnos alu" +
                 " INNER JOIN Personas per ON alu.IdPersona = per.IdPersona" +
                 " INNER JOIN Secciones sec ON alu.IdSeccion = sec.IdSeccion WHERE sec.Seccion = @seccion", conexion);
             comando.Parameters.Clear();
             comando.Parameters.AddWithValue("@seccion", cmbSeccion.Text);
-            SqlDataReader registro = comando.ExecuteReader();
-            while (registro.Read())
-            {
-                cmbAlumno.Items.Add(registro["Carnet"].ToString());
-            }
+            SqlDataAdapter da = new SqlDataAdapter(comando);
+		DataTable dt = new DataTable();
+		da.Fill(dt);
+          
+                dataGridView1.DataSource = dt;
+                
+            
             conexion.Close();
-        }
-
-        private void cmbAlumno_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cmbCargo.Items.Clear();
-            cmbCargo.Enabled = true;
-            SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando1 = new SqlCommand("SELECT Cargo FROM Cargos", conexion);
-            SqlDataReader registro1 = comando1.ExecuteReader();
-            while (registro1.Read())
-            {
-                cmbCargo.Items.Add(registro1["Cargo"].ToString());
-            }
-            conexion.Close();
-        }
-
-        private void BtnAceptar_Click(object sender, EventArgs e)
-        {
-
+            
         }
     }
 }

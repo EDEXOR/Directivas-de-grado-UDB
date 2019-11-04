@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Alumno.cs" />
     <Compile Include="AlumnoDirectiva.cs" />
+    <Compile Include="AlumnosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosForm.Designer.cs">
+      <DependentUpon>AlumnosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cargo.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Creditos.cs">
@@ -75,6 +81,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Padre.cs" />
     <Compile Include="PadreDirectiva.cs" />
     <Compile Include="Persona.cs" />
@@ -93,6 +105,9 @@
     <EmbeddedResource Include="AgregarAlumno.resx">
       <DependentUpon>AgregarAlumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosForm.resx">
+      <DependentUpon>AlumnosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Creditos.resx">
       <DependentUpon>Creditos.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -57,12 +57,13 @@
             // pcbAlumno
             // 
             this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.agregar_estudiante;
-            this.pcbAlumno.Location = new System.Drawing.Point(301, 13);
+            this.pcbAlumno.Location = new System.Drawing.Point(302, 12);
             this.pcbAlumno.Name = "pcbAlumno";
             this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
             this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbAlumno.TabIndex = 4;
             this.pcbAlumno.TabStop = false;
+            this.pcbAlumno.Click += new System.EventHandler(this.pcbAlumno_Click);
             // 
             // btnAceptar
             // 

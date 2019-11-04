@@ -31,12 +31,12 @@
             this.lblGradoYSeccion = new System.Windows.Forms.Label();
             this.lblAlumno = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.pcbAlumno = new System.Windows.Forms.PictureBox();
             this.cmbGrado = new System.Windows.Forms.ComboBox();
             this.cmbSeccion = new System.Windows.Forms.ComboBox();
             this.cmbAlumno = new System.Windows.Forms.ComboBox();
             this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.pcbAlumno = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,16 +69,6 @@
             this.lblCargo.Size = new System.Drawing.Size(155, 21);
             this.lblCargo.TabIndex = 2;
             this.lblCargo.Text = "Seleccionar cargo:";
-            // 
-            // pcbAlumno
-            // 
-            this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.icono_alumno;
-            this.pcbAlumno.Location = new System.Drawing.Point(179, 13);
-            this.pcbAlumno.Name = "pcbAlumno";
-            this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
-            this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbAlumno.TabIndex = 3;
-            this.pcbAlumno.TabStop = false;
             // 
             // cmbGrado
             // 
@@ -134,6 +124,17 @@
             this.btnAceptar.TabIndex = 21;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
+            // 
+            // pcbAlumno
+            // 
+            this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.icono_alumno;
+            this.pcbAlumno.Location = new System.Drawing.Point(179, 13);
+            this.pcbAlumno.Name = "pcbAlumno";
+            this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
+            this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbAlumno.TabIndex = 3;
+            this.pcbAlumno.TabStop = false;
             // 
             // AgregarAlumno
             // 

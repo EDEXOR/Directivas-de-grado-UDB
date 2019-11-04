@@ -74,7 +74,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
                 if (reader.Read())
                 {
-                    AgregarAlumno form = new AgregarAlumno();
+                    menu form = new menu();
                     form.Show();
                     this.Hide();
                 }else

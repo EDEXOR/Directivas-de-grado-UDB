@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    public partial class RegistrarAlumno : Form
+    public partial class menu : Form
     {
-        public RegistrarAlumno()
+        public menu()
         {
             InitializeComponent();
         }
 
-        private void pcbAlumno_Click(object sender, EventArgs e)
+        private void Alumnos_Click(object sender, EventArgs e)
         {
-
+            AlumnosForm form = new AlumnosForm();
+            form.Show();
+            this.Hide();
         }
     }
 }
