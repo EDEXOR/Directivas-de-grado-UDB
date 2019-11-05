@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pcbAlumno = new System.Windows.Forms.PictureBox();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.cmbEncargado = new System.Windows.Forms.ComboBox();
             this.lblSegundoApellido = new System.Windows.Forms.Label();
             this.lblPrimerNombre = new System.Windows.Forms.Label();
             this.lblSegundoNombre = new System.Windows.Forms.Label();
@@ -45,25 +43,16 @@
             this.txtPrimerApellido = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.lblEncargado = new System.Windows.Forms.Label();
             this.lblGrado = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbGrado = new System.Windows.Forms.ComboBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbSeccion = new System.Windows.Forms.ComboBox();
             this.lblSeccion = new System.Windows.Forms.Label();
+            this.pcbAlumno = new System.Windows.Forms.PictureBox();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pcbAlumno
-            // 
-            this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.agregar_estudiante;
-            this.pcbAlumno.Location = new System.Drawing.Point(302, 12);
-            this.pcbAlumno.Name = "pcbAlumno";
-            this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
-            this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbAlumno.TabIndex = 4;
-            this.pcbAlumno.TabStop = false;
-            this.pcbAlumno.Click += new System.EventHandler(this.pcbAlumno_Click);
             // 
             // btnAceptar
             // 
@@ -77,22 +66,13 @@
             this.btnAceptar.TabIndex = 29;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
-            // 
-            // cmbEncargado
-            // 
-            this.cmbEncargado.Enabled = false;
-            this.cmbEncargado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEncargado.FormattingEnabled = true;
-            this.cmbEncargado.Location = new System.Drawing.Point(180, 372);
-            this.cmbEncargado.Name = "cmbEncargado";
-            this.cmbEncargado.Size = new System.Drawing.Size(235, 29);
-            this.cmbEncargado.TabIndex = 26;
+            this.btnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // lblSegundoApellido
             // 
             this.lblSegundoApellido.AutoSize = true;
             this.lblSegundoApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSegundoApellido.Location = new System.Drawing.Point(367, 279);
+            this.lblSegundoApellido.Location = new System.Drawing.Point(36, 280);
             this.lblSegundoApellido.Name = "lblSegundoApellido";
             this.lblSegundoApellido.Size = new System.Drawing.Size(150, 21);
             this.lblSegundoApellido.TabIndex = 22;
@@ -112,7 +92,7 @@
             // 
             this.lblSegundoNombre.AutoSize = true;
             this.lblSegundoNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSegundoNombre.Location = new System.Drawing.Point(367, 189);
+            this.lblSegundoNombre.Location = new System.Drawing.Point(366, 189);
             this.lblSegundoNombre.Name = "lblSegundoNombre";
             this.lblSegundoNombre.Size = new System.Drawing.Size(149, 21);
             this.lblSegundoNombre.TabIndex = 31;
@@ -122,7 +102,7 @@
             // 
             this.lblPrimerApellido.AutoSize = true;
             this.lblPrimerApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrimerApellido.Location = new System.Drawing.Point(36, 279);
+            this.lblPrimerApellido.Location = new System.Drawing.Point(366, 232);
             this.lblPrimerApellido.Name = "lblPrimerApellido";
             this.lblPrimerApellido.Size = new System.Drawing.Size(127, 21);
             this.lblPrimerApellido.TabIndex = 32;
@@ -161,7 +141,7 @@
             // txtPrimerNombre
             // 
             this.txtPrimerNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrimerNombre.Location = new System.Drawing.Point(180, 190);
+            this.txtPrimerNombre.Location = new System.Drawing.Point(192, 190);
             this.txtPrimerNombre.Name = "txtPrimerNombre";
             this.txtPrimerNombre.Size = new System.Drawing.Size(139, 23);
             this.txtPrimerNombre.TabIndex = 36;
@@ -177,7 +157,7 @@
             // txtSegundoApellido
             // 
             this.txtSegundoApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSegundoApellido.Location = new System.Drawing.Point(542, 280);
+            this.txtSegundoApellido.Location = new System.Drawing.Point(192, 280);
             this.txtSegundoApellido.Name = "txtSegundoApellido";
             this.txtSegundoApellido.Size = new System.Drawing.Size(139, 23);
             this.txtSegundoApellido.TabIndex = 38;
@@ -185,7 +165,7 @@
             // txtTercerNombre
             // 
             this.txtTercerNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTercerNombre.Location = new System.Drawing.Point(180, 236);
+            this.txtTercerNombre.Location = new System.Drawing.Point(192, 236);
             this.txtTercerNombre.Name = "txtTercerNombre";
             this.txtTercerNombre.Size = new System.Drawing.Size(139, 23);
             this.txtTercerNombre.TabIndex = 39;
@@ -193,7 +173,7 @@
             // txtPrimerApellido
             // 
             this.txtPrimerApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrimerApellido.Location = new System.Drawing.Point(180, 280);
+            this.txtPrimerApellido.Location = new System.Drawing.Point(542, 235);
             this.txtPrimerApellido.Name = "txtPrimerApellido";
             this.txtPrimerApellido.Size = new System.Drawing.Size(139, 23);
             this.txtPrimerApellido.TabIndex = 40;
@@ -209,40 +189,31 @@
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(180, 322);
+            this.txtTelefono.Location = new System.Drawing.Point(192, 324);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(139, 23);
             this.txtTelefono.TabIndex = 42;
-            // 
-            // lblEncargado
-            // 
-            this.lblEncargado.AutoSize = true;
-            this.lblEncargado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEncargado.Location = new System.Drawing.Point(36, 375);
-            this.lblEncargado.Name = "lblEncargado";
-            this.lblEncargado.Size = new System.Drawing.Size(102, 21);
-            this.lblEncargado.TabIndex = 43;
-            this.lblEncargado.Text = "Encargado:";
             // 
             // lblGrado
             // 
             this.lblGrado.AutoSize = true;
             this.lblGrado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrado.Location = new System.Drawing.Point(433, 375);
+            this.lblGrado.Location = new System.Drawing.Point(241, 380);
             this.lblGrado.Name = "lblGrado";
             this.lblGrado.Size = new System.Drawing.Size(65, 21);
             this.lblGrado.TabIndex = 44;
             this.lblGrado.Text = "Grado:";
             // 
-            // comboBox1
+            // cbGrado
             // 
-            this.comboBox1.Enabled = false;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(504, 372);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(47, 29);
-            this.comboBox1.TabIndex = 45;
+            this.cbGrado.Enabled = false;
+            this.cbGrado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGrado.FormattingEnabled = true;
+            this.cbGrado.Location = new System.Drawing.Point(312, 377);
+            this.cbGrado.Name = "cbGrado";
+            this.cbGrado.Size = new System.Drawing.Size(47, 29);
+            this.cbGrado.TabIndex = 45;
+            this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // btnLimpiar
             // 
@@ -257,37 +228,67 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // cbSeccion
             // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(638, 372);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(47, 29);
-            this.comboBox2.TabIndex = 48;
+            this.cbSeccion.Enabled = false;
+            this.cbSeccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSeccion.FormattingEnabled = true;
+            this.cbSeccion.Location = new System.Drawing.Point(448, 380);
+            this.cbSeccion.Name = "cbSeccion";
+            this.cbSeccion.Size = new System.Drawing.Size(47, 29);
+            this.cbSeccion.TabIndex = 48;
             // 
             // lblSeccion
             // 
             this.lblSeccion.AutoSize = true;
             this.lblSeccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeccion.Location = new System.Drawing.Point(557, 375);
+            this.lblSeccion.Location = new System.Drawing.Point(367, 380);
             this.lblSeccion.Name = "lblSeccion";
             this.lblSeccion.Size = new System.Drawing.Size(75, 21);
             this.lblSeccion.TabIndex = 47;
             this.lblSeccion.Text = "Sección:";
+            // 
+            // pcbAlumno
+            // 
+            this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.agregar_estudiante;
+            this.pcbAlumno.Location = new System.Drawing.Point(302, 12);
+            this.pcbAlumno.Name = "pcbAlumno";
+            this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
+            this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbAlumno.TabIndex = 4;
+            this.pcbAlumno.TabStop = false;
+            this.pcbAlumno.Click += new System.EventHandler(this.pcbAlumno_Click);
+            // 
+            // txtCarnet
+            // 
+            this.txtCarnet.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarnet.Location = new System.Drawing.Point(542, 283);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(139, 23);
+            this.txtCarnet.TabIndex = 50;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(366, 282);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 21);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Carnet:";
             // 
             // RegistrarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 503);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.txtCarnet);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbSeccion);
             this.Controls.Add(this.lblSeccion);
             this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbGrado);
             this.Controls.Add(this.lblGrado);
-            this.Controls.Add(this.lblEncargado);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtPrimerApellido);
@@ -302,11 +303,11 @@
             this.Controls.Add(this.lblSegundoNombre);
             this.Controls.Add(this.lblPrimerNombre);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.cmbEncargado);
             this.Controls.Add(this.lblSegundoApellido);
             this.Controls.Add(this.pcbAlumno);
             this.Name = "RegistrarAlumno";
             this.Text = "Registrar alumno";
+            this.Load += new System.EventHandler(this.RegistrarAlumno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -317,7 +318,6 @@
 
         private System.Windows.Forms.PictureBox pcbAlumno;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.ComboBox cmbEncargado;
         private System.Windows.Forms.Label lblSegundoApellido;
         private System.Windows.Forms.Label lblPrimerNombre;
         private System.Windows.Forms.Label lblSegundoNombre;
@@ -332,11 +332,12 @@
         private System.Windows.Forms.TextBox txtPrimerApellido;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.Label lblEncargado;
         private System.Windows.Forms.Label lblGrado;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbGrado;
         private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbSeccion;
         private System.Windows.Forms.Label lblSeccion;
+        private System.Windows.Forms.TextBox txtCarnet;
+        private System.Windows.Forms.Label label1;
     }
 }

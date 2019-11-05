@@ -72,5 +72,19 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             conexion.Close();
             
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            RegistrarAlumno form = new RegistrarAlumno();
+            form.Show();
+            this.Hide();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            menu form = new menu();
+            form.Show();
+            this.Hide();
+        }
     }
 }
