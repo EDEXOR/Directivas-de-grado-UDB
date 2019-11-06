@@ -66,6 +66,12 @@
     <Compile Include="AlumnosForm.Designer.cs">
       <DependentUpon>AlumnosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlumnosForm_Prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosForm_Prof.Designer.cs">
+      <DependentUpon>AlumnosForm_Prof.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cargo.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Creditos.cs">
@@ -92,6 +98,12 @@
     </Compile>
     <Compile Include="menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_profesores.Designer.cs">
+      <DependentUpon>menu_profesores.cs</DependentUpon>
     </Compile>
     <Compile Include="ModificarAlumno.cs">
       <SubType>Form</SubType>
@@ -165,6 +177,9 @@
     <EmbeddedResource Include="AlumnosForm.resx">
       <DependentUpon>AlumnosForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosForm_Prof.resx">
+      <DependentUpon>AlumnosForm_Prof.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Creditos.resx">
       <DependentUpon>Creditos.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_profesores.resx">
+      <DependentUpon>menu_profesores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAlumno.resx">
       <DependentUpon>ModificarAlumno.cs</DependentUpon>
