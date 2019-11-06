@@ -49,5 +49,12 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             form.Show();
             this.Hide();
         }
+
+        private void btnDirectivas_Click(object sender, EventArgs e)
+        {
+            RegistrarDirectiva form = new RegistrarDirectiva();
+            form.Show();
+            this.Hide();
+        }
     }
 }

@@ -59,3 +59,5 @@ C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Gra
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarPadre.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarUsuario.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.UsuariosForm.resources
+C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AgregarPadre.resources
+C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarDirectiva.resources

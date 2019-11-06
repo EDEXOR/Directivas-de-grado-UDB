@@ -191,6 +191,7 @@
             this.btnDirectivas.Size = new System.Drawing.Size(111, 103);
             this.btnDirectivas.TabIndex = 44;
             this.btnDirectivas.UseVisualStyleBackColor = true;
+            this.btnDirectivas.Click += new System.EventHandler(this.btnDirectivas_Click);
             // 
             // btnPadres
             // 

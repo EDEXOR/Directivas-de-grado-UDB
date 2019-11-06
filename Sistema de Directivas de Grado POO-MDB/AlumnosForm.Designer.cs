@@ -175,7 +175,7 @@
             this.Controls.Add(this.cmbGrado);
             this.Controls.Add(this.pcbImagen);
             this.Controls.Add(this.lblGradoYSeccion);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "AlumnosForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de alumnos";

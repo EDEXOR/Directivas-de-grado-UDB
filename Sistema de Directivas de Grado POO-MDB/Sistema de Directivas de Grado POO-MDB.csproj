@@ -52,6 +52,12 @@
     <Compile Include="AgregarAlumno.Designer.cs">
       <DependentUpon>AgregarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarPadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPadre.Designer.cs">
+      <DependentUpon>AgregarPadre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno.cs" />
     <Compile Include="AlumnoDirectiva.cs" />
     <Compile Include="AlumnosForm.cs">
@@ -111,6 +117,12 @@
     <Compile Include="RegistrarAlumno.Designer.cs">
       <DependentUpon>RegistrarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarDirectiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarDirectiva.Designer.cs">
+      <DependentUpon>RegistrarDirectiva.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarPadre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,9 @@
     <Compile Include="Validaciones.cs" />
     <EmbeddedResource Include="AgregarAlumno.resx">
       <DependentUpon>AgregarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPadre.resx">
+      <DependentUpon>AgregarPadre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AlumnosForm.resx">
       <DependentUpon>AlumnosForm.cs</DependentUpon>
@@ -174,6 +189,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrarAlumno.resx">
       <DependentUpon>RegistrarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarDirectiva.resx">
+      <DependentUpon>RegistrarDirectiva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarPadre.resx">
       <DependentUpon>RegistrarPadre.cs</DependentUpon>
