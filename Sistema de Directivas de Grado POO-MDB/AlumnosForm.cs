@@ -13,6 +13,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
     public partial class AlumnosForm : Form
     {
+        private int edit_indice = -1;
         public AlumnosForm()
         {
             InitializeComponent();
@@ -59,7 +60,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-            dataGridView1.DataSource = dt;
+            dgvListado.DataSource = dt;
 
 
             conexion.Close();
@@ -76,6 +77,15 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private void Button3_Click(object sender, EventArgs e)
         {
             frmMenu form = new frmMenu();
+            form.Show();
+            this.Hide();
+        }
+
+        private void dgvListado_DoubleClick(object sender, EventArgs e)
+        {
+            string id = dgvListado.CurrentRow.Cells[0].Value.ToString();
+            ModificarAlumno form = new ModificarAlumno();
+            form.carnet = id;
             form.Show();
             this.Hide();
         }

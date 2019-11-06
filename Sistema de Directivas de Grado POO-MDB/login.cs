@@ -71,8 +71,6 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 cm.Parameters.AddWithValue("@clave", txtPassword.Text);
                 SqlDataReader reader = cm.ExecuteReader();
 
-
-
                 if (reader.Read())
                 {
                     String tipo = reader["TipoUsuario"].ToString();
@@ -90,7 +88,6 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                         form.Show();
                         this.Hide();
                     }
-
 
                 }
                 else

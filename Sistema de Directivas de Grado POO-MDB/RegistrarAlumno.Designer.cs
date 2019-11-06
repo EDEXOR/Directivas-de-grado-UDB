@@ -68,7 +68,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(249, 432);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(110, 45);
-            this.btnAceptar.TabIndex = 11;
+            this.btnAceptar.TabIndex = 12;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
@@ -225,7 +225,7 @@
             this.cbGrado.Location = new System.Drawing.Point(495, 370);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Size = new System.Drawing.Size(47, 29);
-            this.cbGrado.TabIndex = 9;
+            this.cbGrado.TabIndex = 10;
             this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
             // 
             // btnLimpiar
@@ -237,7 +237,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(388, 432);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(110, 45);
-            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.TabIndex = 13;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -251,7 +251,7 @@
             this.cbSeccion.Location = new System.Drawing.Point(634, 370);
             this.cbSeccion.Name = "cbSeccion";
             this.cbSeccion.Size = new System.Drawing.Size(47, 29);
-            this.cbSeccion.TabIndex = 10;
+            this.cbSeccion.TabIndex = 11;
             // 
             // lblSeccion
             // 
@@ -315,7 +315,7 @@
             this.cmbPadres.Location = new System.Drawing.Point(192, 370);
             this.cmbPadres.Name = "cmbPadres";
             this.cmbPadres.Size = new System.Drawing.Size(214, 29);
-            this.cmbPadres.TabIndex = 51;
+            this.cmbPadres.TabIndex = 9;
             // 
             // RegistrarAlumno
             // 
