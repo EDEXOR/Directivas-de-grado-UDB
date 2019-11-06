@@ -121,7 +121,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             SqlDataReader registro = comando.ExecuteReader();
             while (registro.Read())
             {
-                cbSeccion.Items.Add(registro["IdSeccion"].ToString());
+                cbSeccion.Items.Add(registro["Seccion"].ToString());
 
             }
             conexion.Close();

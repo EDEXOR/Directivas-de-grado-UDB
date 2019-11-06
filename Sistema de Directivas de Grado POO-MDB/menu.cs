@@ -28,5 +28,12 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         {
             Application.Exit();
         }
+
+        private void btnProfesores_Click(object sender, EventArgs e)
+        {
+            ProfesoresForm form = new ProfesoresForm();
+            form.Show();
+            this.Hide();
+        }
     }
 }

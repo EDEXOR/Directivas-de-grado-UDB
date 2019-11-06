@@ -178,6 +178,7 @@
             this.btnProfesores.Size = new System.Drawing.Size(111, 103);
             this.btnProfesores.TabIndex = 45;
             this.btnProfesores.UseVisualStyleBackColor = true;
+            this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
             // 
             // btnDirectivas
             // 

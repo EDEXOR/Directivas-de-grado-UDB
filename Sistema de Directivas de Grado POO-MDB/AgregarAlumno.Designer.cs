@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarAlumno));
             this.lblGradoYSeccion = new System.Windows.Forms.Label();
             this.lblAlumno = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
@@ -128,8 +129,8 @@
             // 
             // pcbAlumno
             // 
-            this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.icono_alumno;
-            this.pcbAlumno.Location = new System.Drawing.Point(179, 13);
+            this.pcbAlumno.Image = ((System.Drawing.Image)(resources.GetObject("pcbAlumno.Image")));
+            this.pcbAlumno.Location = new System.Drawing.Point(178, 23);
             this.pcbAlumno.Name = "pcbAlumno";
             this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
             this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

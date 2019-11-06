@@ -89,8 +89,20 @@
     </Compile>
     <Compile Include="Padre.cs" />
     <Compile Include="PadreDirectiva.cs" />
+    <Compile Include="PadresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PadresForm.Designer.cs">
+      <DependentUpon>PadresForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Persona.cs" />
     <Compile Include="Profesor.cs" />
+    <Compile Include="ProfesoresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfesoresForm.Designer.cs">
+      <DependentUpon>ProfesoresForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrarAlumno.cs">
@@ -119,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PadresForm.resx">
+      <DependentUpon>PadresForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfesoresForm.resx">
+      <DependentUpon>ProfesoresForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
