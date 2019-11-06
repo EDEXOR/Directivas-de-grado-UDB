@@ -71,12 +71,29 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 cm.Parameters.AddWithValue("@clave", txtPassword.Text);
                 SqlDataReader reader = cm.ExecuteReader();
 
+
+
                 if (reader.Read())
                 {
-                    frmMenu form = new frmMenu();
-                    form.Show();
-                    this.Hide();
-                }else
+                    String tipo = reader["TipoUsuario"].ToString();
+                    String id = reader["idProfesor"].ToString();
+
+                    if (tipo == "1")
+                    {
+                        frmMenu form = new frmMenu();
+                        form.Show();
+                        this.Hide();
+                    }
+                    else if (tipo == "2")
+                    {
+                        menu_profesores form = new menu_profesores(id);
+                        form.Show();
+                        this.Hide();
+                    }
+
+
+                }
+                else
                 {
                     MessageBox.Show("Credenciales incorrectas", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
