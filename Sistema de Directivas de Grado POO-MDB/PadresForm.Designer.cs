@@ -50,6 +50,7 @@
             this.btnRegresar.TabIndex = 56;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnAgregar
             // 
@@ -63,6 +64,7 @@
             this.btnAgregar.TabIndex = 55;
             this.btnAgregar.Text = "Agregar padre de familia";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dgvListado
             // 
@@ -111,6 +113,7 @@
             this.Name = "PadresForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de padres de familia";
+            this.Load += new System.EventHandler(this.PadresForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).EndInit();
             this.ResumeLayout(false);

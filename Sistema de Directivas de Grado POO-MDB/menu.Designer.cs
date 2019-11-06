@@ -201,6 +201,7 @@
             this.btnPadres.Size = new System.Drawing.Size(111, 103);
             this.btnPadres.TabIndex = 43;
             this.btnPadres.UseVisualStyleBackColor = true;
+            this.btnPadres.Click += new System.EventHandler(this.btnPadres_Click);
             // 
             // btnAlumnos
             // 

@@ -35,5 +35,12 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             form.Show();
             this.Hide();
         }
+
+        private void btnPadres_Click(object sender, EventArgs e)
+        {
+            PadresForm form = new PadresForm();
+            form.Show();
+            this.Hide();
+        }
     }
 }
