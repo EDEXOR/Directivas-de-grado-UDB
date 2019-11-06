@@ -11,37 +11,37 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    public partial class ProfesoresForm : Form
+    public partial class UsuariosForm : Form
     {
-        public ProfesoresForm()
+        public UsuariosForm()
         {
             InitializeComponent();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            frmMenu form = new frmMenu();
-            form.Show();
-            this.Hide();
-        }
-
-        private void ProfesoresForm_Load(object sender, EventArgs e)
+        private void UsuariosForm_Load(object sender, EventArgs e)
         {
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT PrimerNombre, SegundoNombre, TercerNombre, PrimerApellido, SegundoApellido, Telefono, Email FROM Personas per" +
-                " INNER JOIN Profesores pro ON per.IdPersona = pro.IdPersona", conexion);
+            SqlCommand comando = new SqlCommand("SELECT per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido, per.Telefono, per.Email FROM Personas per" +
+                " INNER JOIN Profesores pro ON per.IdPersona = pro.IdPersona" +
+                " INNER JOIN Usuarios usu ON pro.IdProfesor = usu.IdProfesor", conexion);
             comando.Parameters.Clear();
             SqlDataAdapter da = new SqlDataAdapter(comando);
             DataTable dt = new DataTable();
             da.Fill(dt);
-
             dgvListado.DataSource = dt;
             conexion.Close();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            RegistrarProfesor form = new RegistrarProfesor();
+            RegistrarUsuario form = new RegistrarUsuario();
+            form.Show();
+            this.Hide();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            frmMenu form = new frmMenu();
             form.Show();
             this.Hide();
         }

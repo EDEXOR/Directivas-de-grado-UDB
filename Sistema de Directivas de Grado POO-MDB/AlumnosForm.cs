@@ -49,23 +49,21 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void CmbSeccion_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT  alu.Carnet, per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido FROM Alumnos alu" +
+            SqlCommand comando = new SqlCommand("SELECT alu.Carnet, per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido FROM Alumnos alu" +
                 " INNER JOIN Personas per ON alu.IdPersona = per.IdPersona" +
                 " INNER JOIN Secciones sec ON alu.IdSeccion = sec.IdSeccion WHERE sec.Seccion = @seccion", conexion);
             comando.Parameters.Clear();
             comando.Parameters.AddWithValue("@seccion", cmbSeccion.Text);
             SqlDataAdapter da = new SqlDataAdapter(comando);
-		DataTable dt = new DataTable();
-		da.Fill(dt);
-          
-                dataGridView1.DataSource = dt;
-                
-            
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+
             conexion.Close();
-            
+
         }
 
         private void Button1_Click(object sender, EventArgs e)

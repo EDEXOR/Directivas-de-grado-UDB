@@ -167,6 +167,7 @@
             this.btnUsuarios.Size = new System.Drawing.Size(111, 103);
             this.btnUsuarios.TabIndex = 46;
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnProfesores
             // 
