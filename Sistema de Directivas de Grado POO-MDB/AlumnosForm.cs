@@ -18,11 +18,6 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             InitializeComponent();
         }
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AlumnosForm_Load(object sender, EventArgs e)
         {
             SqlConnection conexion = Conexion.conectar();

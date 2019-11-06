@@ -64,6 +64,7 @@
             this.btnAgregar.TabIndex = 49;
             this.btnAgregar.Text = "Agregar Profesor";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dgvListado
             // 
@@ -112,6 +113,7 @@
             this.Name = "ProfesoresForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de profesores";
+            this.Load += new System.EventHandler(this.ProfesoresForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).EndInit();
             this.ResumeLayout(false);
