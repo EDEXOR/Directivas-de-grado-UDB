@@ -145,6 +145,7 @@
             // 
             this.txtPrimerNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrimerNombre.Location = new System.Drawing.Point(192, 190);
+            this.txtPrimerNombre.MaxLength = 50;
             this.txtPrimerNombre.Name = "txtPrimerNombre";
             this.txtPrimerNombre.Size = new System.Drawing.Size(139, 23);
             this.txtPrimerNombre.TabIndex = 1;
@@ -153,6 +154,7 @@
             // 
             this.txtSegundoNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSegundoNombre.Location = new System.Drawing.Point(542, 191);
+            this.txtSegundoNombre.MaxLength = 50;
             this.txtSegundoNombre.Name = "txtSegundoNombre";
             this.txtSegundoNombre.Size = new System.Drawing.Size(139, 23);
             this.txtSegundoNombre.TabIndex = 2;
@@ -161,6 +163,7 @@
             // 
             this.txtSegundoApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSegundoApellido.Location = new System.Drawing.Point(192, 280);
+            this.txtSegundoApellido.MaxLength = 50;
             this.txtSegundoApellido.Name = "txtSegundoApellido";
             this.txtSegundoApellido.Size = new System.Drawing.Size(139, 23);
             this.txtSegundoApellido.TabIndex = 5;
@@ -169,6 +172,7 @@
             // 
             this.txtTercerNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTercerNombre.Location = new System.Drawing.Point(192, 236);
+            this.txtTercerNombre.MaxLength = 50;
             this.txtTercerNombre.Name = "txtTercerNombre";
             this.txtTercerNombre.Size = new System.Drawing.Size(139, 23);
             this.txtTercerNombre.TabIndex = 3;
@@ -177,6 +181,7 @@
             // 
             this.txtPrimerApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrimerApellido.Location = new System.Drawing.Point(542, 235);
+            this.txtPrimerApellido.MaxLength = 50;
             this.txtPrimerApellido.Name = "txtPrimerApellido";
             this.txtPrimerApellido.Size = new System.Drawing.Size(139, 23);
             this.txtPrimerApellido.TabIndex = 4;
@@ -185,6 +190,7 @@
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(473, 325);
+            this.txtCorreo.MaxLength = 50;
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(208, 23);
             this.txtCorreo.TabIndex = 8;
@@ -193,6 +199,7 @@
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.Location = new System.Drawing.Point(192, 324);
+            this.txtTelefono.MaxLength = 9;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(139, 23);
             this.txtTelefono.TabIndex = 7;
@@ -268,6 +275,7 @@
             // 
             this.txtCarnet.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCarnet.Location = new System.Drawing.Point(542, 278);
+            this.txtCarnet.MaxLength = 8;
             this.txtCarnet.Name = "txtCarnet";
             this.txtCarnet.Size = new System.Drawing.Size(139, 23);
             this.txtCarnet.TabIndex = 6;

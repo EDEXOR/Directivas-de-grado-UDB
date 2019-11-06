@@ -69,6 +69,7 @@
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.Location = new System.Drawing.Point(197, 360);
+            this.txtTelefono.MaxLength = 9;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(139, 23);
             this.txtTelefono.TabIndex = 76;
@@ -77,6 +78,7 @@
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(478, 361);
+            this.txtCorreo.MaxLength = 50;
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(208, 23);
             this.txtCorreo.TabIndex = 77;
@@ -85,6 +87,7 @@
             // 
             this.txtPrimerApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrimerApellido.Location = new System.Drawing.Point(547, 271);
+            this.txtPrimerApellido.MaxLength = 50;
             this.txtPrimerApellido.Name = "txtPrimerApellido";
             this.txtPrimerApellido.Size = new System.Drawing.Size(139, 23);
             this.txtPrimerApellido.TabIndex = 74;
@@ -93,6 +96,7 @@
             // 
             this.txtTercerNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTercerNombre.Location = new System.Drawing.Point(197, 272);
+            this.txtTercerNombre.MaxLength = 50;
             this.txtTercerNombre.Name = "txtTercerNombre";
             this.txtTercerNombre.Size = new System.Drawing.Size(139, 23);
             this.txtTercerNombre.TabIndex = 72;
@@ -101,6 +105,7 @@
             // 
             this.txtSegundoApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSegundoApellido.Location = new System.Drawing.Point(197, 316);
+            this.txtSegundoApellido.MaxLength = 50;
             this.txtSegundoApellido.Name = "txtSegundoApellido";
             this.txtSegundoApellido.Size = new System.Drawing.Size(139, 23);
             this.txtSegundoApellido.TabIndex = 75;
@@ -109,6 +114,7 @@
             // 
             this.txtSegundoNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSegundoNombre.Location = new System.Drawing.Point(547, 227);
+            this.txtSegundoNombre.MaxLength = 50;
             this.txtSegundoNombre.Name = "txtSegundoNombre";
             this.txtSegundoNombre.Size = new System.Drawing.Size(139, 23);
             this.txtSegundoNombre.TabIndex = 71;
@@ -117,6 +123,7 @@
             // 
             this.txtPrimerNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrimerNombre.Location = new System.Drawing.Point(197, 226);
+            this.txtPrimerNombre.MaxLength = 50;
             this.txtPrimerNombre.Name = "txtPrimerNombre";
             this.txtPrimerNombre.Size = new System.Drawing.Size(139, 23);
             this.txtPrimerNombre.TabIndex = 70;

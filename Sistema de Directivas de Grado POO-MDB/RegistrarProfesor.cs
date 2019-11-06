@@ -23,9 +23,9 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             limpiarErrores();
             if (validarCampos())
             {
-                SqlConnection conexion = Conexion.conectar();
+                SqlConnection conexion1 = Conexion.conectar();
 
-                SqlCommand codP = new SqlCommand("SELECT COUNT(*) FROM Personas", conexion);
+                SqlCommand codP = new SqlCommand("SELECT COUNT(*) FROM Personas", conexion1);
                 codP.Parameters.Clear();
                 int CantidadP = Convert.ToInt32(codP.ExecuteScalar()) + 1;
 
@@ -47,11 +47,11 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 {
                     codigoP = ("P0" + CantidadP.ToString());
                 }
-                conexion.Close();
+                conexion1.Close();
 
-                SqlConnection conexioon = Conexion.conectar();
+                SqlConnection conexion2 = Conexion.conectar();
 
-                SqlCommand codPr = new SqlCommand("SELECT COUNT(*) FROM Profesores", conexioon);
+                SqlCommand codPr = new SqlCommand("SELECT COUNT(*) FROM Profesores", conexion2);
                 codPr.Parameters.Clear();
                 int CantidadPr = Convert.ToInt32(codPr.ExecuteScalar()) + 1;
 
@@ -73,31 +73,69 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 {
                     codigoPr = ("PR" + CantidadPr.ToString());
                 }
-                conexioon.Close();
+                conexion2.Close();
 
-                SqlConnection conexiooon = Conexion.conectar();
-                SqlCommand cm = new SqlCommand("INSERT INTO Personas VALUES(@codigoP, @PrimerNombre, @SegundoNombre, @TercerNombre, @PrimerApellido, @SegundoApellido, @tel, @email)", conexiooon);
-                cm.Parameters.Clear();
+                SqlConnection conexion3 = Conexion.conectar();
 
-                cm.Parameters.AddWithValue("@codigoP", codigoP);
-                cm.Parameters.AddWithValue("@PrimerNombre", txtPrimerNombre.Text);
-                cm.Parameters.AddWithValue("@SegundoNombre", txtSegundoNombre.Text);
-                cm.Parameters.AddWithValue("@TercerNombre", txtTercerNombre.Text);
-                cm.Parameters.AddWithValue("@PrimerApellido", txtPrimerApellido.Text);
-                cm.Parameters.AddWithValue("@SegundoApellido", txtSegundoApellido.Text);
-                cm.Parameters.AddWithValue("@tel", txtTelefono.Text);
-                cm.Parameters.AddWithValue("@email", txtCorreo.Text);
-                SqlDataReader dr = cm.ExecuteReader();
-                conexiooon.Close();
+                SqlCommand codU = new SqlCommand("SELECT COUNT(*) FROM Usuarios", conexion3);
+                codU.Parameters.Clear();
+                int CantidadU = Convert.ToInt32(codU.ExecuteScalar()) + 1;
 
-                SqlConnection conexioooon = Conexion.conectar();
-                SqlCommand com = new SqlCommand("INSERT INTO Profesores VALUES(@codigoPr, @codigoP)", conexioooon);
-                com.Parameters.Clear();
+                String codigoU = "";
 
-                com.Parameters.AddWithValue("@codigoPr", codigoPr);
-                com.Parameters.AddWithValue("@codigoP", codigoP);
-                SqlDataReader drr = com.ExecuteReader();
-                conexioooon.Close();
+                if (CantidadU < 10)
+                {
+                    codigoU = ("U0000" + CantidadU.ToString());
+                }
+                else if (CantidadPr >= 10 && CantidadU < 100)
+                {
+                    codigoU = ("U000" + CantidadU.ToString());
+                }
+                else if (CantidadPr >= 100 && CantidadU < 1000)
+                {
+                    codigoU = ("U00" + CantidadU.ToString());
+                }
+                else if (CantidadPr >= 1000 && CantidadU < 10000)
+                {
+                    codigoU = ("U0" + CantidadU.ToString());
+                }
+                conexion3.Close();
+
+                SqlConnection conexion4 = Conexion.conectar();
+                SqlCommand cm1 = new SqlCommand("INSERT INTO Personas VALUES(@codigoP, @PrimerNombre, @SegundoNombre, @TercerNombre, @PrimerApellido, @SegundoApellido, @tel, @email)", conexion4);
+                cm1.Parameters.Clear();
+
+                cm1.Parameters.AddWithValue("@codigoP", codigoP);
+                cm1.Parameters.AddWithValue("@PrimerNombre", txtPrimerNombre.Text);
+                cm1.Parameters.AddWithValue("@SegundoNombre", txtSegundoNombre.Text);
+                cm1.Parameters.AddWithValue("@TercerNombre", txtTercerNombre.Text);
+                cm1.Parameters.AddWithValue("@PrimerApellido", txtPrimerApellido.Text);
+                cm1.Parameters.AddWithValue("@SegundoApellido", txtSegundoApellido.Text);
+                cm1.Parameters.AddWithValue("@tel", txtTelefono.Text);
+                cm1.Parameters.AddWithValue("@email", txtCorreo.Text);
+                SqlDataReader dr1 = cm1.ExecuteReader();
+                conexion4.Close();
+
+                SqlConnection conexion5 = Conexion.conectar();
+                SqlCommand cm2 = new SqlCommand("INSERT INTO Profesores VALUES(@codigoPr, @codigoP)", conexion5);
+                cm2.Parameters.Clear();
+
+                cm2.Parameters.AddWithValue("@codigoPr", codigoPr);
+                cm2.Parameters.AddWithValue("@codigoP", codigoP);
+                SqlDataReader drr = cm2.ExecuteReader();
+                conexion5.Close();
+
+                SqlConnection conexion6 = Conexion.conectar();
+                SqlCommand cm3 = new SqlCommand("INSERT INTO Usuarios VALUES(@codigoU, @codigoPr, @TipoUsuario, @correo, @clave)", conexion6);
+                cm3.Parameters.Clear();
+
+                cm3.Parameters.AddWithValue("@codigoU", codigoU);
+                cm3.Parameters.AddWithValue("@codigoPr", codigoPr);
+                cm3.Parameters.AddWithValue("@TipoUsuario", 2);
+                cm3.Parameters.AddWithValue("@correo", txtCorreo.Text);
+                cm3.Parameters.AddWithValue("@clave", "clave");
+                SqlDataReader drrr = cm3.ExecuteReader();
+                conexion6.Close();
 
                 MessageBox.Show("Se agrego bien paloma", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

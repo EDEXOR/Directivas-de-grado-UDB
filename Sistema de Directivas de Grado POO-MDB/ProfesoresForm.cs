@@ -36,8 +36,6 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             da.Fill(dt);
 
             dgvListado.DataSource = dt;
-
-
             conexion.Close();
         }
 
