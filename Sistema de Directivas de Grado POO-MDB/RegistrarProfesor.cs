@@ -187,6 +187,16 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 bandera = false;
                 listaErrores.SetError(txtCorreo, "Ingrese el correo del profesor");
             }
+            if (!Validaciones.ValidarTelefono(txtTelefono.Text))
+            {
+                bandera = false;
+                listaErrores.SetError(txtTelefono, "Ingrese un teléfono válido");
+            }
+            if (!Validaciones.ValidarEmail(txtCorreo.Text))
+            {
+                bandera = false;
+                listaErrores.SetError(txtCorreo, "Ingrese un correo válido");
+            }
             return bandera;
         }
 

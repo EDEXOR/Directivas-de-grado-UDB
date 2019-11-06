@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    class Validaciones
+    public class Validaciones
     {
         public void ValidarLetras(KeyPressEventArgs e)
         {
@@ -35,8 +35,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             }
         }
 
-
-        public void ValidarPass(KeyPressEventArgs e, TextBox txt)
+        public static void ValidarPass(KeyPressEventArgs e, TextBox txt)
         {
             //condicion para solo números
             if (char.IsLetterOrDigit(e.KeyChar))
@@ -91,7 +90,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             }
         }
 
-        public bool ValidarEmail(string email)
+        public static bool ValidarEmail(string email)
         {
             //cadena o expresion regular que verifica a un formato de correo electrónico
             string expresion = @"^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$";
@@ -112,5 +111,50 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 return false;
             }
         }
+
+        public static bool ValidarTelefono(string telefono)
+        {
+            //cadena o expresion regular que verifica a un formato de correo electrónico
+            string expresion = @"[0-9]{4}-[0-9]{4}";
+            //verifica que el email ingresado corresponda con la expresion válida
+            if (Regex.IsMatch(telefono, expresion))
+            {//verifica que la direccion corresponda y que la longitud de la cadena no esté vacía
+                if (Regex.Replace(telefono, expresion, string.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool ValidarCarnet(string carnet)
+        {
+            //cadena o expresion regular que verifica a un formato de correo electrónico
+            string expresion = @"[a-zA-Z]{2}[0-9]{6}";
+            //verifica que el email ingresado corresponda con la expresion válida
+            if (Regex.IsMatch(carnet, expresion))
+            {//verifica que la direccion corresponda y que la longitud de la cadena no esté vacía
+                if (Regex.Replace(carnet, expresion, string.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

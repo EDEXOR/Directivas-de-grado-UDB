@@ -17,7 +17,6 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         {
             InitializeComponent();
         }
-        Validaciones val = new Validaciones();
         static bool flag = false;
         private void Login_Load(object sender, EventArgs e)
         {
@@ -41,13 +40,13 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void TxtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-            val.ValidarPass(e, txtPassword);
+            Validaciones.ValidarPass(e, txtPassword);
         }
 
 
         private void TxtCorreo_Validated(object sender, EventArgs e)
         {
-            if (val.ValidarEmail(txtCorreo.Text))
+            if (Validaciones.ValidarEmail(txtCorreo.Text))
             {
                 flag = true;
                 errorProvider1.Clear();

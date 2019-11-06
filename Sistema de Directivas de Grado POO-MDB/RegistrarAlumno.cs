@@ -28,7 +28,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 SqlCommand codP = new SqlCommand("SELECT COUNT(*) FROM Personas", conexion);
                 codP.Parameters.Clear();
                 int CantidadP = Convert.ToInt32(codP.ExecuteScalar()) + 1;
-                
+
                 String codigoP = "";
 
                 if (CantidadP < 10)
@@ -107,7 +107,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             {
                 MessageBox.Show("Debe revisar los datos ingresados");
             }
-            
+
         }
 
         private void cbGrado_SelectedIndexChanged(object sender, EventArgs e)
@@ -178,6 +178,21 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             {
                 bandera = false;
                 listaErrores.SetError(txtCarnet, "Ingrese el carnet del estudiante");
+            }
+            if (!Validaciones.ValidarTelefono(txtTelefono.Text))
+            {
+                bandera = false;
+                listaErrores.SetError(txtTelefono, "Ingrese un teléfono válido");
+            }
+            if (!Validaciones.ValidarEmail(txtCorreo.Text))
+            {
+                bandera = false;
+                listaErrores.SetError(txtCorreo, "Ingrese un correo válido");
+            }
+            if (!Validaciones.ValidarCarnet(txtCarnet.Text))
+            {
+                bandera = false;
+                listaErrores.SetError(txtCarnet, "Ingrese un carnet válido");
             }
             return bandera;
         }
