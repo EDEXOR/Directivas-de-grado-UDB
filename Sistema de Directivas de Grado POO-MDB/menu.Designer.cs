@@ -1,6 +1,6 @@
 ﻿namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    partial class menu
+    partial class frmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
-            this.btnAceptar = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
+            this.btnAjustes = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.alumnos = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblPadres = new System.Windows.Forms.Label();
+            this.lblAlumnos = new System.Windows.Forms.Label();
+            this.lblDirectivas = new System.Windows.Forms.Label();
+            this.lblProfesores = new System.Windows.Forms.Label();
+            this.lblUsuarios = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnProfesores = new System.Windows.Forms.Button();
+            this.btnDirectivas = new System.Windows.Forms.Button();
+            this.btnPadres = new System.Windows.Forms.Button();
+            this.btnAlumnos = new System.Windows.Forms.Button();
+            this.btnDatos = new System.Windows.Forms.Button();
+            this.lblDatos = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnAceptar
+            // btnAjustes
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAceptar.Location = new System.Drawing.Point(678, 171);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(110, 45);
-            this.btnAceptar.TabIndex = 30;
-            this.btnAceptar.Text = "Ajustes";
-            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAjustes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjustes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjustes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAjustes.Location = new System.Drawing.Point(678, 186);
+            this.btnAjustes.Name = "btnAjustes";
+            this.btnAjustes.Size = new System.Drawing.Size(110, 45);
+            this.btnAjustes.TabIndex = 30;
+            this.btnAjustes.Text = "Ajustes";
+            this.btnAjustes.UseVisualStyleBackColor = false;
             // 
             // lblTitulo
             // 
@@ -73,192 +73,196 @@
             this.lblTitulo.Text = "Sistema de Directivas\r\nde Grado";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lblPadres
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(12, 376);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 28);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Padres de familia";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPadres.AutoSize = true;
+            this.lblPadres.BackColor = System.Drawing.Color.Transparent;
+            this.lblPadres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblPadres.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPadres.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPadres.Location = new System.Drawing.Point(12, 376);
+            this.lblPadres.Name = "lblPadres";
+            this.lblPadres.Size = new System.Drawing.Size(216, 28);
+            this.lblPadres.TabIndex = 33;
+            this.lblPadres.Text = "Padres de familia";
+            this.lblPadres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblAlumnos
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(59, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 28);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Alumnos";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAlumnos.AutoSize = true;
+            this.lblAlumnos.BackColor = System.Drawing.Color.Transparent;
+            this.lblAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblAlumnos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlumnos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAlumnos.Location = new System.Drawing.Point(59, 219);
+            this.lblAlumnos.Name = "lblAlumnos";
+            this.lblAlumnos.Size = new System.Drawing.Size(113, 28);
+            this.lblAlumnos.TabIndex = 36;
+            this.lblAlumnos.Text = "Alumnos";
+            this.lblAlumnos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lblDirectivas
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(307, 219);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 28);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Directivas";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDirectivas.AutoSize = true;
+            this.lblDirectivas.BackColor = System.Drawing.Color.Transparent;
+            this.lblDirectivas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDirectivas.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDirectivas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDirectivas.Location = new System.Drawing.Point(276, 219);
+            this.lblDirectivas.Name = "lblDirectivas";
+            this.lblDirectivas.Size = new System.Drawing.Size(126, 28);
+            this.lblDirectivas.TabIndex = 38;
+            this.lblDirectivas.Text = "Directivas";
+            this.lblDirectivas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lblProfesores
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(303, 376);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 28);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "Profesores";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblProfesores.AutoSize = true;
+            this.lblProfesores.BackColor = System.Drawing.Color.Transparent;
+            this.lblProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblProfesores.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfesores.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblProfesores.Location = new System.Drawing.Point(274, 376);
+            this.lblProfesores.Name = "lblProfesores";
+            this.lblProfesores.Size = new System.Drawing.Size(130, 28);
+            this.lblProfesores.TabIndex = 39;
+            this.lblProfesores.Text = "Profesores";
+            this.lblProfesores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lblUsuarios
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(518, 376);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 28);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "Usuarios";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUsuarios.AutoSize = true;
+            this.lblUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblUsuarios.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarios.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblUsuarios.Location = new System.Drawing.Point(499, 376);
+            this.lblUsuarios.Name = "lblUsuarios";
+            this.lblUsuarios.Size = new System.Drawing.Size(108, 28);
+            this.lblUsuarios.TabIndex = 40;
+            this.lblUsuarios.Text = "Usuarios";
+            this.lblUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnSalir
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(678, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 45);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSalir.BackColor = System.Drawing.Color.Maroon;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalir.Location = new System.Drawing.Point(678, 247);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(110, 45);
+            this.btnSalir.TabIndex = 41;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button5
+            // btnUsuarios
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(515, 270);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 103);
-            this.button5.TabIndex = 46;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnUsuarios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.BackgroundImage")));
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Location = new System.Drawing.Point(496, 270);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(111, 103);
+            this.btnUsuarios.TabIndex = 46;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnProfesores
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(312, 258);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(111, 103);
-            this.button4.TabIndex = 45;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnProfesores.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProfesores.BackgroundImage")));
+            this.btnProfesores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfesores.Location = new System.Drawing.Point(282, 270);
+            this.btnProfesores.Name = "btnProfesores";
+            this.btnProfesores.Size = new System.Drawing.Size(111, 103);
+            this.btnProfesores.TabIndex = 45;
+            this.btnProfesores.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDirectivas
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(312, 113);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 103);
-            this.button3.TabIndex = 44;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDirectivas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDirectivas.BackgroundImage")));
+            this.btnDirectivas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDirectivas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDirectivas.Location = new System.Drawing.Point(282, 113);
+            this.btnDirectivas.Name = "btnDirectivas";
+            this.btnDirectivas.Size = new System.Drawing.Size(111, 103);
+            this.btnDirectivas.TabIndex = 44;
+            this.btnDirectivas.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnPadres
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(61, 270);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 103);
-            this.button2.TabIndex = 43;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPadres.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPadres.BackgroundImage")));
+            this.btnPadres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPadres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPadres.Location = new System.Drawing.Point(61, 270);
+            this.btnPadres.Name = "btnPadres";
+            this.btnPadres.Size = new System.Drawing.Size(111, 103);
+            this.btnPadres.TabIndex = 43;
+            this.btnPadres.UseVisualStyleBackColor = true;
             // 
-            // alumnos
+            // btnAlumnos
             // 
-            this.alumnos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("alumnos.BackgroundImage")));
-            this.alumnos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.alumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.alumnos.Location = new System.Drawing.Point(61, 113);
-            this.alumnos.Name = "alumnos";
-            this.alumnos.Size = new System.Drawing.Size(111, 103);
-            this.alumnos.TabIndex = 42;
-            this.alumnos.UseVisualStyleBackColor = true;
-            this.alumnos.Click += new System.EventHandler(this.Alumnos_Click);
+            this.btnAlumnos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlumnos.BackgroundImage")));
+            this.btnAlumnos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlumnos.Location = new System.Drawing.Point(61, 113);
+            this.btnAlumnos.Name = "btnAlumnos";
+            this.btnAlumnos.Size = new System.Drawing.Size(111, 103);
+            this.btnAlumnos.TabIndex = 42;
+            this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.Alumnos_Click);
             // 
-            // button6
+            // btnDatos
             // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(515, 113);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 103);
-            this.button6.TabIndex = 47;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnDatos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDatos.BackgroundImage")));
+            this.btnDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatos.Location = new System.Drawing.Point(496, 113);
+            this.btnDatos.Name = "btnDatos";
+            this.btnDatos.Size = new System.Drawing.Size(111, 103);
+            this.btnDatos.TabIndex = 47;
+            this.btnDatos.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // lblDatos
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(472, 219);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(200, 28);
-            this.label6.TabIndex = 48;
-            this.label6.Text = "Centro de datos";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDatos.AutoSize = true;
+            this.lblDatos.BackColor = System.Drawing.Color.Transparent;
+            this.lblDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDatos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDatos.Location = new System.Drawing.Point(453, 219);
+            this.lblDatos.Name = "lblDatos";
+            this.lblDatos.Size = new System.Drawing.Size(200, 28);
+            this.lblDatos.TabIndex = 48;
+            this.lblDatos.Text = "Centro de datos";
+            this.lblDatos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // menu
+            // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.alumnos);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(814, 450);
+            this.Controls.Add(this.lblDatos);
+            this.Controls.Add(this.btnDatos);
+            this.Controls.Add(this.btnUsuarios);
+            this.Controls.Add(this.btnProfesores);
+            this.Controls.Add(this.btnDirectivas);
+            this.Controls.Add(this.btnPadres);
+            this.Controls.Add(this.btnAlumnos);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.lblUsuarios);
+            this.Controls.Add(this.lblProfesores);
+            this.Controls.Add(this.lblDirectivas);
+            this.Controls.Add(this.lblAlumnos);
+            this.Controls.Add(this.lblPadres);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.btnAceptar);
-            this.Name = "menu";
-            this.Text = "menu";
+            this.Controls.Add(this.btnAjustes);
+            this.MaximizeBox = false;
+            this.Name = "frmMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menú principal";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,20 +270,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnAjustes;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button alumnos;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblPadres;
+        private System.Windows.Forms.Label lblAlumnos;
+        private System.Windows.Forms.Label lblDirectivas;
+        private System.Windows.Forms.Label lblProfesores;
+        private System.Windows.Forms.Label lblUsuarios;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAlumnos;
+        private System.Windows.Forms.Button btnPadres;
+        private System.Windows.Forms.Button btnDirectivas;
+        private System.Windows.Forms.Button btnProfesores;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnDatos;
+        private System.Windows.Forms.Label lblDatos;
     }
 }

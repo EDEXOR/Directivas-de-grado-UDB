@@ -153,6 +153,7 @@
             this.Controls.Add(this.lblGradoYSeccion);
             this.MaximizeBox = false;
             this.Name = "AgregarAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asignar cargo a alumno";
             this.Load += new System.EventHandler(this.AgregarAlumno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).EndInit();

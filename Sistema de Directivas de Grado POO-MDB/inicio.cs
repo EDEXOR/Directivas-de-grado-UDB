@@ -29,7 +29,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         public void Timer_Tick(object sender, EventArgs eArgs)
         {
             Clock.Stop();
-            Login form_log = new Login();
+            frmLogin form_log = new frmLogin();
             this.Hide();
             form_log.Show();           
         }

@@ -27,7 +27,6 @@ C:\Users\RonaldNolasco\Source\Repos\Directivas-de-grado-UDB\Sistema de Directiva
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csprojAssemblyReference.cache
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Creditos.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Inicio.resources
-C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Login.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.GenerateResource.cache
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.CoreCompileInputs.cache
@@ -51,3 +50,6 @@ C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas d
 C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.CoreCompileInputs.cache
 C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.menu.resources
 C:\Users\EDWARD\Documents\GitHub\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AlumnosForm.resources
+C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AlumnosForm.resources
+C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.frmMenu.resources
+C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.frmLogin.resources

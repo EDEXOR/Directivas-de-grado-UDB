@@ -24,7 +24,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Login form_log = new Login();
+            frmLogin form_log = new frmLogin();
             form_log.Show();
             this.Hide();
         }

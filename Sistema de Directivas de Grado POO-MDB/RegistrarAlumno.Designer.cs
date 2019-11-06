@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.lblSegundoApellido = new System.Windows.Forms.Label();
             this.lblPrimerNombre = new System.Windows.Forms.Label();
@@ -50,8 +51,10 @@
             this.lblSeccion = new System.Windows.Forms.Label();
             this.pcbAlumno = new System.Windows.Forms.PictureBox();
             this.txtCarnet = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCarnet = new System.Windows.Forms.Label();
+            this.listaErrores = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaErrores)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -60,10 +63,10 @@
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAceptar.Location = new System.Drawing.Point(245, 432);
+            this.btnAceptar.Location = new System.Drawing.Point(249, 432);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(110, 45);
-            this.btnAceptar.TabIndex = 29;
+            this.btnAceptar.TabIndex = 11;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
@@ -102,7 +105,7 @@
             // 
             this.lblPrimerApellido.AutoSize = true;
             this.lblPrimerApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrimerApellido.Location = new System.Drawing.Point(366, 232);
+            this.lblPrimerApellido.Location = new System.Drawing.Point(366, 235);
             this.lblPrimerApellido.Name = "lblPrimerApellido";
             this.lblPrimerApellido.Size = new System.Drawing.Size(127, 21);
             this.lblPrimerApellido.TabIndex = 32;
@@ -144,7 +147,7 @@
             this.txtPrimerNombre.Location = new System.Drawing.Point(192, 190);
             this.txtPrimerNombre.Name = "txtPrimerNombre";
             this.txtPrimerNombre.Size = new System.Drawing.Size(139, 23);
-            this.txtPrimerNombre.TabIndex = 36;
+            this.txtPrimerNombre.TabIndex = 1;
             // 
             // txtSegundoNombre
             // 
@@ -152,7 +155,7 @@
             this.txtSegundoNombre.Location = new System.Drawing.Point(542, 191);
             this.txtSegundoNombre.Name = "txtSegundoNombre";
             this.txtSegundoNombre.Size = new System.Drawing.Size(139, 23);
-            this.txtSegundoNombre.TabIndex = 37;
+            this.txtSegundoNombre.TabIndex = 2;
             // 
             // txtSegundoApellido
             // 
@@ -160,7 +163,7 @@
             this.txtSegundoApellido.Location = new System.Drawing.Point(192, 280);
             this.txtSegundoApellido.Name = "txtSegundoApellido";
             this.txtSegundoApellido.Size = new System.Drawing.Size(139, 23);
-            this.txtSegundoApellido.TabIndex = 38;
+            this.txtSegundoApellido.TabIndex = 5;
             // 
             // txtTercerNombre
             // 
@@ -168,7 +171,7 @@
             this.txtTercerNombre.Location = new System.Drawing.Point(192, 236);
             this.txtTercerNombre.Name = "txtTercerNombre";
             this.txtTercerNombre.Size = new System.Drawing.Size(139, 23);
-            this.txtTercerNombre.TabIndex = 39;
+            this.txtTercerNombre.TabIndex = 3;
             // 
             // txtPrimerApellido
             // 
@@ -176,7 +179,7 @@
             this.txtPrimerApellido.Location = new System.Drawing.Point(542, 235);
             this.txtPrimerApellido.Name = "txtPrimerApellido";
             this.txtPrimerApellido.Size = new System.Drawing.Size(139, 23);
-            this.txtPrimerApellido.TabIndex = 40;
+            this.txtPrimerApellido.TabIndex = 4;
             // 
             // txtCorreo
             // 
@@ -184,7 +187,7 @@
             this.txtCorreo.Location = new System.Drawing.Point(473, 325);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(208, 23);
-            this.txtCorreo.TabIndex = 41;
+            this.txtCorreo.TabIndex = 8;
             // 
             // txtTelefono
             // 
@@ -192,7 +195,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(192, 324);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(139, 23);
-            this.txtTelefono.TabIndex = 42;
+            this.txtTelefono.TabIndex = 7;
             // 
             // lblGrado
             // 
@@ -206,14 +209,15 @@
             // 
             // cbGrado
             // 
+            this.cbGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGrado.Enabled = false;
             this.cbGrado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGrado.FormattingEnabled = true;
             this.cbGrado.Location = new System.Drawing.Point(312, 377);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Size = new System.Drawing.Size(47, 29);
-            this.cbGrado.TabIndex = 45;
-            this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            this.cbGrado.TabIndex = 9;
+            this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
             // 
             // btnLimpiar
             // 
@@ -224,19 +228,21 @@
             this.btnLimpiar.Location = new System.Drawing.Point(388, 432);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(110, 45);
-            this.btnLimpiar.TabIndex = 46;
+            this.btnLimpiar.TabIndex = 12;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // cbSeccion
             // 
+            this.cbSeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSeccion.Enabled = false;
             this.cbSeccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSeccion.FormattingEnabled = true;
-            this.cbSeccion.Location = new System.Drawing.Point(448, 380);
+            this.cbSeccion.Location = new System.Drawing.Point(451, 377);
             this.cbSeccion.Name = "cbSeccion";
             this.cbSeccion.Size = new System.Drawing.Size(47, 29);
-            this.cbSeccion.TabIndex = 48;
+            this.cbSeccion.TabIndex = 10;
             // 
             // lblSeccion
             // 
@@ -257,33 +263,37 @@
             this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbAlumno.TabIndex = 4;
             this.pcbAlumno.TabStop = false;
-            this.pcbAlumno.Click += new System.EventHandler(this.pcbAlumno_Click);
             // 
             // txtCarnet
             // 
             this.txtCarnet.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarnet.Location = new System.Drawing.Point(542, 283);
+            this.txtCarnet.Location = new System.Drawing.Point(542, 278);
             this.txtCarnet.Name = "txtCarnet";
             this.txtCarnet.Size = new System.Drawing.Size(139, 23);
-            this.txtCarnet.TabIndex = 50;
+            this.txtCarnet.TabIndex = 6;
             // 
-            // label1
+            // lblCarnet
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(366, 282);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 21);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Carnet:";
+            this.lblCarnet.AutoSize = true;
+            this.lblCarnet.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarnet.Location = new System.Drawing.Point(366, 279);
+            this.lblCarnet.Name = "lblCarnet";
+            this.lblCarnet.Size = new System.Drawing.Size(70, 21);
+            this.lblCarnet.TabIndex = 49;
+            this.lblCarnet.Text = "Carnet:";
+            // 
+            // listaErrores
+            // 
+            this.listaErrores.ContainerControl = this;
             // 
             // RegistrarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(726, 503);
             this.Controls.Add(this.txtCarnet);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCarnet);
             this.Controls.Add(this.cbSeccion);
             this.Controls.Add(this.lblSeccion);
             this.Controls.Add(this.btnLimpiar);
@@ -305,10 +315,13 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.lblSegundoApellido);
             this.Controls.Add(this.pcbAlumno);
+            this.MaximizeBox = false;
             this.Name = "RegistrarAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar alumno";
             this.Load += new System.EventHandler(this.RegistrarAlumno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaErrores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,6 +351,7 @@
         private System.Windows.Forms.ComboBox cbSeccion;
         private System.Windows.Forms.Label lblSeccion;
         private System.Windows.Forms.TextBox txtCarnet;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCarnet;
+        private System.Windows.Forms.ErrorProvider listaErrores;
     }
 }

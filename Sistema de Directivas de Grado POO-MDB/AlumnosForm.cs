@@ -82,7 +82,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            menu form = new menu();
+            frmMenu form = new frmMenu();
             form.Show();
             this.Hide();
         }

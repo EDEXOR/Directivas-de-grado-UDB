@@ -11,7 +11,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
     {
         public static SqlConnection conectar()
         {
-            SqlConnection cn = new SqlConnection("Data Source=DESKTOP-RT1E3ER\\EDEXOR;Initial Catalog=db_directiva;Integrated Security=True");
+            SqlConnection cn = new SqlConnection("Data Source=DIEGO-PC\\SQLEXPRESS;Initial Catalog=db_directiva;Integrated Security=True");
             cn.Open();
             return cn;
         }

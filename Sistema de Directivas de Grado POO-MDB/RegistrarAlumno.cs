@@ -18,106 +18,99 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             InitializeComponent();
         }
 
-        private void pcbAlumno_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
-            SqlConnection conexion = Conexion.conectar();
-
-            SqlCommand codP = new SqlCommand("SELECT * FROM Personas", conexion);
-            codP.Parameters.Clear();
-            SqlDataReader readerCodP = codP.ExecuteReader();
-
-            int CantidadP = readerCodP.FieldCount + 2;
-            String codigoP = "Nel";
-
-            if (CantidadP <= 10)
+            limpiarErrores();
+            if (validarCampos())
             {
-                codigoP = ("P000" + CantidadP.ToString());
-            }
-            else if (CantidadP >= 10 && CantidadP <= 100)
-            {
-                codigoP = ("P000" + CantidadP.ToString());
-            }
-            else if (CantidadP >= 100 && CantidadP <= 1000)
-            {
-                codigoP = ("P00" + CantidadP.ToString());
-            }
-            conexion.Close();
+                SqlConnection conexion = Conexion.conectar();
 
-            SqlConnection conexioon = Conexion.conectar();
-
-            SqlCommand codA = new SqlCommand("SELECT * FROM Alumnos", conexioon);
-            codA.Parameters.Clear();
-            SqlDataReader readerCodA = codA.ExecuteReader();
-
-            int CantidadA = readerCodA.FieldCount +2;
-            String codigoA = "Nel";
-
-            if (CantidadA <= 10)
-            {
-                codigoA = ("A000" + CantidadA.ToString());
-            }
-            else if (CantidadA >= 10 && CantidadA <= 100)
-            {
-                codigoA = ("A000" + CantidadA.ToString());
-            }
-            else if (CantidadA >= 100 && CantidadA <= 1000)
-            {
-                codigoA = ("A00" + CantidadA.ToString());
-            }
-            conexioon.Close();
-
-
-            SqlConnection conexiooon = Conexion.conectar();
-            SqlCommand cm = new SqlCommand("INSERT INTO Personas VALUES(@codigoP, @PrimerNombre, @SegundoNombre, @TercerNombre, @PrimerApellido, @SegundoApellido, @tel, @email)", conexiooon);
-            cm.Parameters.Clear();
-            
-            cm.Parameters.AddWithValue("@codigoP", codigoP);
-            cm.Parameters.AddWithValue("@PrimerNombre", txtPrimerNombre.Text);
-            cm.Parameters.AddWithValue("@SegundoNombre", txtSegundoNombre.Text);
-            cm.Parameters.AddWithValue("@TercerNombre", txtTercerNombre.Text);
-            cm.Parameters.AddWithValue("@PrimerApellido", txtPrimerApellido.Text);
-            cm.Parameters.AddWithValue("@SegundoApellido", txtSegundoApellido.Text);
-            cm.Parameters.AddWithValue("@tel", txtTelefono.Text);
-            cm.Parameters.AddWithValue("@email", txtCorreo.Text);
-            SqlDataReader dr = cm.ExecuteReader();
-            conexiooon.Close();
-
-            SqlConnection conexioooon = Conexion.conectar();
-            SqlCommand com = new SqlCommand("INSERT INTO Alumnos VALUES(@codigoA, 'PA0001', @codigoP, @Grado, @carnet)", conexioooon);
-            com.Parameters.Clear();
-
-            com.Parameters.AddWithValue("@codigoA", codigoA);
-            com.Parameters.AddWithValue("@codigoP", codigoP);
-            com.Parameters.AddWithValue("@Grado", cbSeccion.Text);
-            com.Parameters.AddWithValue("@carnet", txtCarnet.Text);
-            SqlDataReader drr = com.ExecuteReader();
-            conexioooon.Close();
-
-
-
-
-            MessageBox.Show("Se agrego bien paloma", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      
-            
+                SqlCommand codP = new SqlCommand("SELECT COUNT(*) FROM Personas", conexion);
+                codP.Parameters.Clear();
+                int CantidadP = Convert.ToInt32(codP.ExecuteScalar()) + 1;
                 
-            
-            
-                
-            
+                String codigoP = "";
+
+                if (CantidadP < 10)
+                {
+                    codigoP = ("P0000" + CantidadP.ToString());
+                }
+                else if (CantidadP >= 10 && CantidadP < 100)
+                {
+                    codigoP = ("P000" + CantidadP.ToString());
+                }
+                else if (CantidadP >= 100 && CantidadP < 1000)
+                {
+                    codigoP = ("P00" + CantidadP.ToString());
+                }
+                else if (CantidadP >= 1000 && CantidadP < 10000)
+                {
+                    codigoP = ("P0" + CantidadP.ToString());
+                }
+                conexion.Close();
+
+                SqlConnection conexioon = Conexion.conectar();
+
+                SqlCommand codA = new SqlCommand("SELECT COUNT(*) FROM Alumnos", conexioon);
+                codA.Parameters.Clear();
+                int CantidadA = Convert.ToInt32(codA.ExecuteScalar()) + 1;
+
+                String codigoA = "";
+
+                if (CantidadA < 10)
+                {
+                    codigoA = ("A0000" + CantidadA.ToString());
+                }
+                else if (CantidadA >= 10 && CantidadA < 100)
+                {
+                    codigoA = ("A000" + CantidadA.ToString());
+                }
+                else if (CantidadA >= 100 && CantidadA < 1000)
+                {
+                    codigoA = ("A00" + CantidadA.ToString());
+                }
+                else if (CantidadA >= 1000 && CantidadA < 10000)
+                {
+                    codigoA = ("A0" + CantidadA.ToString());
+                }
+                conexioon.Close();
+
+                SqlConnection conexiooon = Conexion.conectar();
+                SqlCommand cm = new SqlCommand("INSERT INTO Personas VALUES(@codigoP, @PrimerNombre, @SegundoNombre, @TercerNombre, @PrimerApellido, @SegundoApellido, @tel, @email)", conexiooon);
+                cm.Parameters.Clear();
+
+                cm.Parameters.AddWithValue("@codigoP", codigoP);
+                cm.Parameters.AddWithValue("@PrimerNombre", txtPrimerNombre.Text);
+                cm.Parameters.AddWithValue("@SegundoNombre", txtSegundoNombre.Text);
+                cm.Parameters.AddWithValue("@TercerNombre", txtTercerNombre.Text);
+                cm.Parameters.AddWithValue("@PrimerApellido", txtPrimerApellido.Text);
+                cm.Parameters.AddWithValue("@SegundoApellido", txtSegundoApellido.Text);
+                cm.Parameters.AddWithValue("@tel", txtTelefono.Text);
+                cm.Parameters.AddWithValue("@email", txtCorreo.Text);
+                SqlDataReader dr = cm.ExecuteReader();
+                conexiooon.Close();
+
+                SqlConnection conexioooon = Conexion.conectar();
+                SqlCommand com = new SqlCommand("INSERT INTO Alumnos VALUES(@codigoA, 'PA0001', @codigoP, @Grado, @carnet)", conexioooon);
+                com.Parameters.Clear();
+
+                com.Parameters.AddWithValue("@codigoA", codigoA);
+                com.Parameters.AddWithValue("@codigoP", codigoP);
+                com.Parameters.AddWithValue("@Grado", cbSeccion.Text);
+                com.Parameters.AddWithValue("@carnet", txtCarnet.Text);
+                SqlDataReader drr = com.ExecuteReader();
+                conexioooon.Close();
+
+                MessageBox.Show("Se agrego bien paloma", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Debe revisar los datos ingresados");
+            }
             
         }
 
-        private void CmbEncargado_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbGrado_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbSeccion.Items.Clear();
             cbSeccion.Enabled = true;
@@ -147,6 +140,46 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             conexion.Close();
             cbGrado.Enabled = true;
             cbSeccion.Enabled = true;
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtPrimerNombre.Text = "";
+            txtSegundoNombre.Text = "";
+            txtTercerNombre.Text = "";
+            txtPrimerApellido.Text = "";
+            txtSegundoApellido.Text = "";
+            txtCarnet.Text = "";
+            txtTelefono.Text = "";
+            txtCorreo.Text = "";
+        }
+
+        private void limpiarErrores()
+        {
+            listaErrores.SetError(txtPrimerNombre, "");
+            listaErrores.SetError(txtPrimerApellido, "");
+            listaErrores.SetError(txtCarnet, "");
+        }
+
+        private bool validarCampos()
+        {
+            bool bandera = true;
+            if (txtPrimerNombre.Text == String.Empty)
+            {
+                bandera = false;
+                listaErrores.SetError(txtPrimerNombre, "Ingrese el nombre del estudiante");
+            }
+            if (txtPrimerApellido.Text == String.Empty)
+            {
+                bandera = false;
+                listaErrores.SetError(txtPrimerApellido, "Ingrese el apellido del estudiante");
+            }
+            if (txtCarnet.Text == String.Empty)
+            {
+                bandera = false;
+                listaErrores.SetError(txtCarnet, "Ingrese el carnet del estudiante");
+            }
+            return bandera;
         }
     }
 }

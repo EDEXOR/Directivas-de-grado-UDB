@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -74,7 +74,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
                 if (reader.Read())
                 {
-                    menu form = new menu();
+                    frmMenu form = new frmMenu();
                     form.Show();
                     this.Hide();
                 }else

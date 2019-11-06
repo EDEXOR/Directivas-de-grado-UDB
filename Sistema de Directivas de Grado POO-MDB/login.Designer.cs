@@ -1,6 +1,6 @@
 ﻿namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pcbIcono1 = new System.Windows.Forms.PictureBox();
             this.lblIniciarSesion = new System.Windows.Forms.Label();
@@ -228,7 +228,7 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // Login
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -249,7 +249,7 @@
             this.Controls.Add(this.pcbIcono1);
             this.Controls.Add(this.lblTitulo);
             this.MaximizeBox = false;
-            this.Name = "Login";
+            this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesión";
             this.Load += new System.EventHandler(this.Login_Load);

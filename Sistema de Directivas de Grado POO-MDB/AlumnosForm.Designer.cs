@@ -61,7 +61,7 @@
             this.cmbSeccion.Enabled = false;
             this.cmbSeccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSeccion.FormattingEnabled = true;
-            this.cmbSeccion.Location = new System.Drawing.Point(471, 75);
+            this.cmbSeccion.Location = new System.Drawing.Point(471, 72);
             this.cmbSeccion.Name = "cmbSeccion";
             this.cmbSeccion.Size = new System.Drawing.Size(52, 29);
             this.cmbSeccion.TabIndex = 27;
@@ -71,7 +71,7 @@
             // 
             this.cmbGrado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGrado.FormattingEnabled = true;
-            this.cmbGrado.Location = new System.Drawing.Point(413, 75);
+            this.cmbGrado.Location = new System.Drawing.Point(413, 72);
             this.cmbGrado.Name = "cmbGrado";
             this.cmbGrado.Size = new System.Drawing.Size(52, 29);
             this.cmbGrado.TabIndex = 26;
@@ -164,6 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 471);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -175,7 +176,9 @@
             this.Controls.Add(this.cmbGrado);
             this.Controls.Add(this.pcbAlumno);
             this.Controls.Add(this.lblGradoYSeccion);
+            this.MinimizeBox = false;
             this.Name = "AlumnosForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlumnosForm";
             this.Load += new System.EventHandler(this.AlumnosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Directivas_de_Grado_POO_MDB
 {
-    public partial class menu : Form
+    public partial class frmMenu : Form
     {
-        public menu()
+        public frmMenu()
         {
             InitializeComponent();
         }
@@ -22,6 +22,11 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             AlumnosForm form = new AlumnosForm();
             form.Show();
             this.Hide();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
