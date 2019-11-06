@@ -21,7 +21,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private void PadresForm_Load(object sender, EventArgs e)
         {
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT  PrimerNombre, SegundoNombre, TercerNombre, PrimerApellido, SegundoApellido, Telefono, Email FROM Personas per" +
+            SqlCommand comando = new SqlCommand("SELECT PrimerNombre, SegundoNombre, TercerNombre, PrimerApellido, SegundoApellido, Telefono, Email FROM Personas per" +
                 " INNER JOIN Padres pa ON per.IdPersona = pa.IdPersona", conexion);
             comando.Parameters.Clear();
             SqlDataAdapter da = new SqlDataAdapter(comando);

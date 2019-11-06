@@ -91,12 +91,13 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 conexiooon.Close();
 
                 SqlConnection conexioooon = Conexion.conectar();
-                SqlCommand com = new SqlCommand("INSERT INTO Alumnos VALUES(@codigoA, 'PA0001', @codigoP, @Grado, @carnet)", conexioooon);
+                SqlCommand com = new SqlCommand("INSERT INTO Alumnos VALUES(@codigoA, @codigoPa, @codigoP, @Seccion, @carnet)", conexioooon);
                 com.Parameters.Clear();
 
                 com.Parameters.AddWithValue("@codigoA", codigoA);
+                com.Parameters.AddWithValue("@codigoPa", cmbPadres.ValueMember.ToString());
                 com.Parameters.AddWithValue("@codigoP", codigoP);
-                com.Parameters.AddWithValue("@Grado", cbSeccion.Text);
+                com.Parameters.AddWithValue("@Seccion", cbSeccion.ValueMember.ToString());
                 com.Parameters.AddWithValue("@carnet", txtCarnet.Text);
                 SqlDataReader drr = com.ExecuteReader();
                 conexioooon.Close();
@@ -121,8 +122,8 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             SqlDataReader registro = comando.ExecuteReader();
             while (registro.Read())
             {
+                cbSeccion.ValueMember = registro["IdSeccion"].ToString();
                 cbSeccion.Items.Add(registro["Seccion"].ToString());
-
             }
             conexion.Close();
         }
@@ -130,16 +131,31 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private void RegistrarAlumno_Load(object sender, EventArgs e)
         {
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT Grado FROM Grados", conexion);
+            SqlCommand comando = new SqlCommand("SELECT IdGrado, Grado FROM Grados", conexion);
             SqlDataReader registro = comando.ExecuteReader();
 
             while (registro.Read())
             {
+                cbGrado.ValueMember = registro["IdGrado"].ToString();
                 cbGrado.Items.Add(registro["Grado"].ToString());
             }
             conexion.Close();
             cbGrado.Enabled = true;
             cbSeccion.Enabled = true;
+
+            SqlConnection conexion1 = Conexion.conectar();
+            SqlCommand comando1 = new SqlCommand("SELECT pa.IdPadre, PrimerNombre, SegundoNombre, TercerNombre, PrimerApellido, SegundoApellido, Telefono, Email FROM Padres pa" +
+                " INNER JOIN Personas per ON per.IdPersona = pa.IdPersona", conexion1);
+            SqlDataReader registro1 = comando1.ExecuteReader();
+
+            while (registro1.Read())
+            {
+                cmbPadres.ValueMember = registro1["IdPadre"].ToString();
+                cmbPadres.Items.Add(registro1["PrimerNombre"].ToString() + " " + registro1["SegundoNombre"].ToString() + " " + registro1["PrimerApellido"] + " " + registro1["SegundoApellido"]);
+            }
+            conexion.Close();
+            cmbPadres.Enabled = true;
+
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

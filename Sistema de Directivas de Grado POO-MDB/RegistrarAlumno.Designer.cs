@@ -49,12 +49,14 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.cbSeccion = new System.Windows.Forms.ComboBox();
             this.lblSeccion = new System.Windows.Forms.Label();
-            this.pcbAlumno = new System.Windows.Forms.PictureBox();
             this.txtCarnet = new System.Windows.Forms.TextBox();
             this.lblCarnet = new System.Windows.Forms.Label();
             this.listaErrores = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
+            this.pcbAlumno = new System.Windows.Forms.PictureBox();
+            this.lblEncargado = new System.Windows.Forms.Label();
+            this.cmbPadres = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.listaErrores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -208,7 +210,7 @@
             // 
             this.lblGrado.AutoSize = true;
             this.lblGrado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrado.Location = new System.Drawing.Point(241, 380);
+            this.lblGrado.Location = new System.Drawing.Point(424, 373);
             this.lblGrado.Name = "lblGrado";
             this.lblGrado.Size = new System.Drawing.Size(65, 21);
             this.lblGrado.TabIndex = 44;
@@ -220,7 +222,7 @@
             this.cbGrado.Enabled = false;
             this.cbGrado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGrado.FormattingEnabled = true;
-            this.cbGrado.Location = new System.Drawing.Point(312, 377);
+            this.cbGrado.Location = new System.Drawing.Point(495, 370);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Size = new System.Drawing.Size(47, 29);
             this.cbGrado.TabIndex = 9;
@@ -246,7 +248,7 @@
             this.cbSeccion.Enabled = false;
             this.cbSeccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSeccion.FormattingEnabled = true;
-            this.cbSeccion.Location = new System.Drawing.Point(451, 377);
+            this.cbSeccion.Location = new System.Drawing.Point(634, 370);
             this.cbSeccion.Name = "cbSeccion";
             this.cbSeccion.Size = new System.Drawing.Size(47, 29);
             this.cbSeccion.TabIndex = 10;
@@ -255,21 +257,11 @@
             // 
             this.lblSeccion.AutoSize = true;
             this.lblSeccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeccion.Location = new System.Drawing.Point(367, 380);
+            this.lblSeccion.Location = new System.Drawing.Point(550, 373);
             this.lblSeccion.Name = "lblSeccion";
             this.lblSeccion.Size = new System.Drawing.Size(75, 21);
             this.lblSeccion.TabIndex = 47;
             this.lblSeccion.Text = "Sección:";
-            // 
-            // pcbAlumno
-            // 
-            this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.agregar_estudiante;
-            this.pcbAlumno.Location = new System.Drawing.Point(302, 12);
-            this.pcbAlumno.Name = "pcbAlumno";
-            this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
-            this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbAlumno.TabIndex = 4;
-            this.pcbAlumno.TabStop = false;
             // 
             // txtCarnet
             // 
@@ -294,12 +286,45 @@
             // 
             this.listaErrores.ContainerControl = this;
             // 
+            // pcbAlumno
+            // 
+            this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.agregar_estudiante;
+            this.pcbAlumno.Location = new System.Drawing.Point(302, 12);
+            this.pcbAlumno.Name = "pcbAlumno";
+            this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
+            this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbAlumno.TabIndex = 4;
+            this.pcbAlumno.TabStop = false;
+            // 
+            // lblEncargado
+            // 
+            this.lblEncargado.AutoSize = true;
+            this.lblEncargado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEncargado.Location = new System.Drawing.Point(36, 373);
+            this.lblEncargado.Name = "lblEncargado";
+            this.lblEncargado.Size = new System.Drawing.Size(102, 21);
+            this.lblEncargado.TabIndex = 50;
+            this.lblEncargado.Text = "Encargado:";
+            // 
+            // cmbPadres
+            // 
+            this.cmbPadres.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPadres.Enabled = false;
+            this.cmbPadres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPadres.FormattingEnabled = true;
+            this.cmbPadres.Location = new System.Drawing.Point(192, 370);
+            this.cmbPadres.Name = "cmbPadres";
+            this.cmbPadres.Size = new System.Drawing.Size(214, 29);
+            this.cmbPadres.TabIndex = 51;
+            // 
             // RegistrarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(726, 503);
+            this.Controls.Add(this.cmbPadres);
+            this.Controls.Add(this.lblEncargado);
             this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.lblCarnet);
             this.Controls.Add(this.cbSeccion);
@@ -328,8 +353,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar alumno";
             this.Load += new System.EventHandler(this.RegistrarAlumno_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaErrores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,5 +386,7 @@
         private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.Label lblCarnet;
         private System.Windows.Forms.ErrorProvider listaErrores;
+        private System.Windows.Forms.ComboBox cmbPadres;
+        private System.Windows.Forms.Label lblEncargado;
     }
 }
