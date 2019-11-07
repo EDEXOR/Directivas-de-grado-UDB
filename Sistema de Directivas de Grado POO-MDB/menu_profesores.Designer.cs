@@ -40,6 +40,7 @@
             this.lblPadres = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnAjustes = new System.Windows.Forms.Button();
+            this.codigoTxt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nameTeacher
@@ -102,6 +103,7 @@
             this.btnAlumnos.Size = new System.Drawing.Size(111, 103);
             this.btnAlumnos.TabIndex = 68;
             this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.BtnAlumnos_Click_1);
             // 
             // btnSalir
             // 
@@ -185,11 +187,26 @@
             this.btnAjustes.Text = "Ajustes";
             this.btnAjustes.UseVisualStyleBackColor = false;
             // 
+            // codigoTxt
+            // 
+            this.codigoTxt.AutoSize = true;
+            this.codigoTxt.BackColor = System.Drawing.Color.Transparent;
+            this.codigoTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.codigoTxt.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codigoTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.codigoTxt.Location = new System.Drawing.Point(681, 132);
+            this.codigoTxt.Name = "codigoTxt";
+            this.codigoTxt.Size = new System.Drawing.Size(61, 28);
+            this.codigoTxt.TabIndex = 73;
+            this.codigoTxt.Text = "UwU";
+            this.codigoTxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // menu_profesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.codigoTxt);
             this.Controls.Add(this.nameTeacher);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDirectivas);
@@ -222,5 +239,6 @@
         private System.Windows.Forms.Label lblPadres;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnAjustes;
+        private System.Windows.Forms.Label codigoTxt;
     }
 }

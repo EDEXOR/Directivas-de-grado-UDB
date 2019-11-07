@@ -53,6 +53,7 @@
             this.secName.TabIndex = 61;
             this.secName.Text = "A";
             this.secName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.secName.Click += new System.EventHandler(this.SecName_Click);
             // 
             // label2
             // 
