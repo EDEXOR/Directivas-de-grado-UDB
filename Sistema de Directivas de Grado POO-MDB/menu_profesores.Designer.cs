@@ -83,6 +83,7 @@
             this.btnSalir.TabIndex = 67;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblDirectivas
             // 
@@ -160,7 +161,7 @@
             this.codigoTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.codigoTxt.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codigoTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.codigoTxt.Location = new System.Drawing.Point(681, 132);
+            this.codigoTxt.Location = new System.Drawing.Point(674, 129);
             this.codigoTxt.Name = "codigoTxt";
             this.codigoTxt.Size = new System.Drawing.Size(61, 28);
             this.codigoTxt.TabIndex = 73;
@@ -189,6 +190,7 @@
             this.btnPadres.Size = new System.Drawing.Size(111, 103);
             this.btnPadres.TabIndex = 69;
             this.btnPadres.UseVisualStyleBackColor = true;
+            this.btnPadres.Click += new System.EventHandler(this.btnPadres_Click);
             // 
             // btnAlumnos
             // 
@@ -206,6 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.codigoTxt);
             this.Controls.Add(this.nameTeacher);
@@ -219,8 +222,10 @@
             this.Controls.Add(this.lblPadres);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnAjustes);
+            this.MaximizeBox = false;
             this.Name = "menu_profesores";
-            this.Text = "menu_profesores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menú de profesores";
             this.Load += new System.EventHandler(this.Menu_profesores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

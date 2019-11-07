@@ -36,6 +36,7 @@
             this.lblAlumno = new System.Windows.Forms.Label();
             this.pcbAlumno = new System.Windows.Forms.PictureBox();
             this.kodigo = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +56,7 @@
             // 
             // cmbCargo
             // 
+            this.cmbCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCargo.Enabled = false;
             this.cmbCargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCargo.FormattingEnabled = true;
@@ -65,6 +67,7 @@
             // 
             // cmbAlumno
             // 
+            this.cmbAlumno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAlumno.Enabled = false;
             this.cmbAlumno.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAlumno.FormattingEnabled = true;
@@ -114,11 +117,27 @@
             this.kodigo.TabIndex = 31;
             this.kodigo.Text = "UwU";
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Brown;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegresar.Location = new System.Drawing.Point(367, 358);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(98, 45);
+            this.btnRegresar.TabIndex = 89;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // AgregarAlumno_prof
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(492, 446);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.kodigo);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cmbCargo);
@@ -126,8 +145,10 @@
             this.Controls.Add(this.pcbAlumno);
             this.Controls.Add(this.lblCargo);
             this.Controls.Add(this.lblAlumno);
+            this.MaximizeBox = false;
             this.Name = "AgregarAlumno_prof";
-            this.Text = "AgregarAlumno_prof";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Asignar cargo a alumno";
             this.Load += new System.EventHandler(this.AgregarAlumno_prof_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).EndInit();
             this.ResumeLayout(false);
@@ -144,5 +165,6 @@
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblAlumno;
         private System.Windows.Forms.Label kodigo;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

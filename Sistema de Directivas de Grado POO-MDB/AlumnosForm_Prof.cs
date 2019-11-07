@@ -64,5 +64,12 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             form.Show();
             this.Hide();
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            frmLogin form = new frmLogin();
+            form.Show();
+            this.Hide();
+        }
     }
 }

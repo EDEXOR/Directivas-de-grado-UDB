@@ -200,5 +200,11 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             return bandera;
         }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            ProfesoresForm form = new ProfesoresForm();
+            form.Show();
+            this.Hide();
+        }
     }
 }

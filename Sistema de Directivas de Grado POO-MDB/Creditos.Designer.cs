@@ -205,6 +205,7 @@
             this.Controls.Add(this.btnRegresar);
             this.MaximizeBox = false;
             this.Name = "Creditos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Créditos";
             ((System.ComponentModel.ISupportInitialize)(this.pcbDiego)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDavid)).EndInit();

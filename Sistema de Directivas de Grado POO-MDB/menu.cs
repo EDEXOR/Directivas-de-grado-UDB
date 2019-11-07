@@ -26,7 +26,9 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmLogin form = new frmLogin();
+            form.Show();
+            this.Hide();
         }
 
         private void btnProfesores_Click(object sender, EventArgs e)

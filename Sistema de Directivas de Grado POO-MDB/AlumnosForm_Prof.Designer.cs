@@ -47,7 +47,7 @@
             this.secName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.secName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.secName.Location = new System.Drawing.Point(457, 67);
+            this.secName.Location = new System.Drawing.Point(456, 87);
             this.secName.Name = "secName";
             this.secName.Size = new System.Drawing.Size(21, 19);
             this.secName.TabIndex = 61;
@@ -62,7 +62,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(181, 67);
+            this.label2.Location = new System.Drawing.Point(180, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 19);
             this.label2.TabIndex = 60;
@@ -75,12 +75,13 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegresar.Location = new System.Drawing.Point(320, 400);
+            this.btnRegresar.Location = new System.Drawing.Point(320, 389);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(170, 45);
             this.btnRegresar.TabIndex = 59;
-            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.Text = "Salir";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // button2
             // 
@@ -112,9 +113,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 146);
+            this.dataGridView1.Location = new System.Drawing.Point(42, 147);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(716, 240);
+            this.dataGridView1.Size = new System.Drawing.Size(716, 227);
             this.dataGridView1.TabIndex = 56;
             // 
             // label1
@@ -124,7 +125,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(180, 11);
+            this.label1.Location = new System.Drawing.Point(179, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 28);
             this.label1.TabIndex = 55;
@@ -134,7 +135,7 @@
             // pcbImagen
             // 
             this.pcbImagen.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.icono_alumno;
-            this.pcbImagen.Location = new System.Drawing.Point(42, 6);
+            this.pcbImagen.Location = new System.Drawing.Point(42, 25);
             this.pcbImagen.Name = "pcbImagen";
             this.pcbImagen.Size = new System.Drawing.Size(106, 100);
             this.pcbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,6 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.secName);
             this.Controls.Add(this.label2);
@@ -155,7 +157,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pcbImagen);
             this.Name = "AlumnosForm_Prof";
-            this.Text = "AlumnosForm_Prof";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menú de profesores";
             this.Load += new System.EventHandler(this.AlumnosForm_Prof_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).EndInit();

@@ -48,6 +48,7 @@
             this.lblSegundoApellido = new System.Windows.Forms.Label();
             this.pcbAlumno = new System.Windows.Forms.PictureBox();
             this.listaErrores = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaErrores)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLimpiar.Location = new System.Drawing.Point(388, 426);
+            this.btnLimpiar.Location = new System.Drawing.Point(375, 426);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(110, 45);
             this.btnLimpiar.TabIndex = 79;
@@ -194,7 +195,7 @@
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAceptar.Location = new System.Drawing.Point(249, 426);
+            this.btnAceptar.Location = new System.Drawing.Point(236, 426);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(110, 45);
             this.btnAceptar.TabIndex = 78;
@@ -215,7 +216,7 @@
             // pcbAlumno
             // 
             this.pcbAlumno.Image = ((System.Drawing.Image)(resources.GetObject("pcbAlumno.Image")));
-            this.pcbAlumno.Location = new System.Drawing.Point(307, 32);
+            this.pcbAlumno.Location = new System.Drawing.Point(280, 34);
             this.pcbAlumno.Name = "pcbAlumno";
             this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
             this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -226,12 +227,27 @@
             // 
             this.listaErrores.ContainerControl = this;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Brown;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegresar.Location = new System.Drawing.Point(588, 426);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(98, 45);
+            this.btnRegresar.TabIndex = 87;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // RegistrarPadre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(726, 503);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtCorreo);
@@ -280,5 +296,6 @@
         private System.Windows.Forms.Label lblSegundoApellido;
         private System.Windows.Forms.PictureBox pcbAlumno;
         private System.Windows.Forms.ErrorProvider listaErrores;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

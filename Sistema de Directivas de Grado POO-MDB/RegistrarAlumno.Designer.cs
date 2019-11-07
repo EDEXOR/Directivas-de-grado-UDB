@@ -55,6 +55,7 @@
             this.pcbAlumno = new System.Windows.Forms.PictureBox();
             this.lblEncargado = new System.Windows.Forms.Label();
             this.cmbPadres = new System.Windows.Forms.ComboBox();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.listaErrores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAlumno)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +66,7 @@
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAceptar.Location = new System.Drawing.Point(249, 432);
+            this.btnAceptar.Location = new System.Drawing.Point(231, 432);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(110, 45);
             this.btnAceptar.TabIndex = 12;
@@ -234,7 +235,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLimpiar.Location = new System.Drawing.Point(388, 432);
+            this.btnLimpiar.Location = new System.Drawing.Point(370, 432);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(110, 45);
             this.btnLimpiar.TabIndex = 13;
@@ -289,7 +290,7 @@
             // pcbAlumno
             // 
             this.pcbAlumno.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.agregar_estudiante;
-            this.pcbAlumno.Location = new System.Drawing.Point(302, 12);
+            this.pcbAlumno.Location = new System.Drawing.Point(275, 23);
             this.pcbAlumno.Name = "pcbAlumno";
             this.pcbAlumno.Size = new System.Drawing.Size(140, 140);
             this.pcbAlumno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -317,12 +318,27 @@
             this.cmbPadres.Size = new System.Drawing.Size(214, 29);
             this.cmbPadres.TabIndex = 9;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Brown;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegresar.Location = new System.Drawing.Point(583, 432);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(98, 45);
+            this.btnRegresar.TabIndex = 51;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // RegistrarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(726, 503);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.cmbPadres);
             this.Controls.Add(this.lblEncargado);
             this.Controls.Add(this.txtCarnet);
@@ -388,5 +404,6 @@
         private System.Windows.Forms.ErrorProvider listaErrores;
         private System.Windows.Forms.ComboBox cmbPadres;
         private System.Windows.Forms.Label lblEncargado;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }
