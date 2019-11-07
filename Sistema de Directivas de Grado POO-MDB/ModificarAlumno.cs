@@ -79,18 +79,19 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void cbGrado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection conexion3 = Conexion.conectar();
-            SqlCommand comando3 = new SqlCommand("SELECT IdSeccion, Seccion FROM Secciones sec INNER JOIN Grados gra ON sec.IdGrado = gra.IdGrado WHERE gra.Grado=@grado", conexion3);
-            comando3.Parameters.Clear();
-            comando3.Parameters.AddWithValue("@grado", Int32.Parse(cbGrado.Text));
-            SqlDataReader registro3 = comando3.ExecuteReader();
-            while (registro3.Read())
-            {
-                cbSeccion.ValueMember = registro3["IdSeccion"].ToString();
-                cbSeccion.Items.Add(registro3["Seccion"].ToString());
-            }
-            conexion3.Close();
+            cbSeccion.Items.Clear();
             cbSeccion.Enabled = true;
+            SqlConnection conexion = Conexion.conectar();
+            SqlCommand comando = new SqlCommand("SELECT IdSeccion, Seccion FROM Secciones sec INNER JOIN Grados gra ON sec.IdGrado = gra.IdGrado WHERE gra.Grado=@grado", conexion);
+            comando.Parameters.Clear();
+            comando.Parameters.AddWithValue("@grado", Int32.Parse(cbGrado.Text));
+            SqlDataReader registro = comando.ExecuteReader();
+            while (registro.Read())
+            {
+                cbSeccion.ValueMember = registro["IdSeccion"].ToString();
+                cbSeccion.Items.Add(registro["Seccion"].ToString());
+            }
+            conexion.Close();
         }
     }
 }

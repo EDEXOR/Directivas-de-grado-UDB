@@ -111,6 +111,18 @@
     <Compile Include="ModificarAlumno.Designer.cs">
       <DependentUpon>ModificarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarPadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPadre.Designer.cs">
+      <DependentUpon>ModificarPadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarProfesor.Designer.cs">
+      <DependentUpon>ModificarProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Padre.cs" />
     <Compile Include="PadreDirectiva.cs" />
     <Compile Include="PadresForm.cs">
@@ -197,6 +209,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAlumno.resx">
       <DependentUpon>ModificarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPadre.resx">
+      <DependentUpon>ModificarPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarProfesor.resx">
+      <DependentUpon>ModificarProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PadresForm.resx">
       <DependentUpon>PadresForm.cs</DependentUpon>
