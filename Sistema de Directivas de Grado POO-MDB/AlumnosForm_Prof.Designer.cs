@@ -69,6 +69,7 @@
             this.label2.TabIndex = 60;
             this.label2.Text = "Listado de alumnos de la seccion:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // btnRegresar
             // 
@@ -119,6 +120,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(716, 227);
             this.dataGridView1.TabIndex = 56;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -133,6 +135,7 @@
             this.label1.TabIndex = 55;
             this.label1.Text = "Listado de alumnos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // user
             // 
@@ -158,6 +161,7 @@
             this.pcbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbImagen.TabIndex = 54;
             this.pcbImagen.TabStop = false;
+            this.pcbImagen.Click += new System.EventHandler(this.PcbImagen_Click);
             // 
             // AlumnosForm_Prof
             // 

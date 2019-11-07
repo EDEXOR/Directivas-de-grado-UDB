@@ -86,6 +86,12 @@
     <Compile Include="Creditos.Designer.cs">
       <DependentUpon>Creditos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Directiva_prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Directiva_prof.Designer.cs">
+      <DependentUpon>Directiva_prof.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grado.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Creditos.resx">
       <DependentUpon>Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directiva_prof.resx">
+      <DependentUpon>Directiva_prof.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>

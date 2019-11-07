@@ -85,5 +85,25 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             form.Show();
             this.Hide();
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PcbImagen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
