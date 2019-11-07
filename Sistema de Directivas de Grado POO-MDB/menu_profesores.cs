@@ -33,6 +33,8 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
             }
 
+            codigoTxt.Text = kodigo;
+            
             conexion.Close();
 
         }
@@ -44,14 +46,29 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void BtnAlumnos_Click(object sender, EventArgs e)
         {
-            AlumnosForm_Prof form = new AlumnosForm_Prof(kodigo);
-            form.Show();
-            this.Hide();
+            
         }
 
         private void LblTitulo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnAlumnos_Click_1(object sender, EventArgs e)
+        {
+            kodigo = codigoTxt.Text;
+            AlumnosForm_Prof form = new AlumnosForm_Prof(kodigo);
+            form.Show();
+            this.Hide();
+        }
+
+        private void BtnDirectivas_Click(object sender, EventArgs e)
+        {
+
+            kodigo = codigoTxt.Text;
+            AlumnosForm_Prof form = new AlumnosForm_Prof(kodigo);
+            form.Show();
+            this.Hide();
         }
     }
 }

@@ -27,7 +27,8 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             {
 
                 secName.Text = (registro["idSeccion"].ToString());
-                secName.Visible = false;
+                
+                
             }
 
             conexion.Close();
@@ -38,7 +39,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             SqlConnection conexion = Conexion.conectar();
             SqlCommand comando = new SqlCommand("SELECT alu.Carnet, per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido FROM Alumnos alu" +
                 " INNER JOIN Personas per ON alu.IdPersona = per.IdPersona" +
-                " INNER JOIN Secciones sec ON alu.IdSeccion = sec.IdSeccion WHERE sec.Seccion = @seccion", conexion);
+                " INNER JOIN Secciones sec ON alu.IdSeccion = sec.IdSeccion WHERE sec.idSeccion = @seccion", conexion);
             comando.Parameters.Clear();
             comando.Parameters.AddWithValue("@seccion", secName.Text);
             SqlDataAdapter da = new SqlDataAdapter(comando);
@@ -49,6 +50,19 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
 
             conexion.Close();
+        }
+
+        private void SecName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            String kodigo = secName.Text;
+            AgregarAlumno_prof form = new AgregarAlumno_prof(kodigo);
+            form.Show();
+            this.Hide();
         }
     }
 }

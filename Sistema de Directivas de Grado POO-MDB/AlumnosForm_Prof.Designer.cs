@@ -53,6 +53,7 @@
             this.secName.TabIndex = 61;
             this.secName.Text = "A";
             this.secName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.secName.Click += new System.EventHandler(this.SecName_Click);
             // 
             // label2
             // 
@@ -93,6 +94,7 @@
             this.button2.TabIndex = 58;
             this.button2.Text = "Asignar un cargo";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
