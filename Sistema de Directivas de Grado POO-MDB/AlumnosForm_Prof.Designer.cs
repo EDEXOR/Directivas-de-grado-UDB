@@ -94,6 +94,7 @@
             this.button2.TabIndex = 58;
             this.button2.Text = "Asignar un cargo";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 

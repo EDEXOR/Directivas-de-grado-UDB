@@ -27,7 +27,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             {
 
                 secName.Text = (registro["idSeccion"].ToString());
-                secName.Visible = false;
+                
                 
             }
 
@@ -55,6 +55,14 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private void SecName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            String kodigo = secName.Text;
+            AgregarAlumno_prof form = new AgregarAlumno_prof(kodigo);
+            form.Show();
+            this.Hide();
         }
     }
 }

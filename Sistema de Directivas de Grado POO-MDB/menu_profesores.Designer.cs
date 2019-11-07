@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu_profesores));
             this.nameTeacher = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDirectivas = new System.Windows.Forms.Button();
-            this.btnPadres = new System.Windows.Forms.Button();
-            this.btnAlumnos = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblDirectivas = new System.Windows.Forms.Label();
             this.lblAlumnos = new System.Windows.Forms.Label();
@@ -41,6 +38,9 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnAjustes = new System.Windows.Forms.Button();
             this.codigoTxt = new System.Windows.Forms.Label();
+            this.btnDirectivas = new System.Windows.Forms.Button();
+            this.btnPadres = new System.Windows.Forms.Button();
+            this.btnAlumnos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameTeacher
@@ -70,40 +70,6 @@
             this.label1.TabIndex = 71;
             this.label1.Text = "Profesor:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnDirectivas
-            // 
-            this.btnDirectivas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDirectivas.BackgroundImage")));
-            this.btnDirectivas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDirectivas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDirectivas.Location = new System.Drawing.Point(249, 186);
-            this.btnDirectivas.Name = "btnDirectivas";
-            this.btnDirectivas.Size = new System.Drawing.Size(111, 103);
-            this.btnDirectivas.TabIndex = 70;
-            this.btnDirectivas.UseVisualStyleBackColor = true;
-            // 
-            // btnPadres
-            // 
-            this.btnPadres.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPadres.BackgroundImage")));
-            this.btnPadres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPadres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPadres.Location = new System.Drawing.Point(455, 186);
-            this.btnPadres.Name = "btnPadres";
-            this.btnPadres.Size = new System.Drawing.Size(111, 103);
-            this.btnPadres.TabIndex = 69;
-            this.btnPadres.UseVisualStyleBackColor = true;
-            // 
-            // btnAlumnos
-            // 
-            this.btnAlumnos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlumnos.BackgroundImage")));
-            this.btnAlumnos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlumnos.Location = new System.Drawing.Point(41, 186);
-            this.btnAlumnos.Name = "btnAlumnos";
-            this.btnAlumnos.Size = new System.Drawing.Size(111, 103);
-            this.btnAlumnos.TabIndex = 68;
-            this.btnAlumnos.UseVisualStyleBackColor = true;
-            this.btnAlumnos.Click += new System.EventHandler(this.BtnAlumnos_Click_1);
             // 
             // btnSalir
             // 
@@ -200,6 +166,41 @@
             this.codigoTxt.TabIndex = 73;
             this.codigoTxt.Text = "UwU";
             this.codigoTxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnDirectivas
+            // 
+            this.btnDirectivas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDirectivas.BackgroundImage")));
+            this.btnDirectivas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDirectivas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDirectivas.Location = new System.Drawing.Point(249, 186);
+            this.btnDirectivas.Name = "btnDirectivas";
+            this.btnDirectivas.Size = new System.Drawing.Size(111, 103);
+            this.btnDirectivas.TabIndex = 70;
+            this.btnDirectivas.UseVisualStyleBackColor = true;
+            this.btnDirectivas.Click += new System.EventHandler(this.BtnDirectivas_Click);
+            // 
+            // btnPadres
+            // 
+            this.btnPadres.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPadres.BackgroundImage")));
+            this.btnPadres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPadres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPadres.Location = new System.Drawing.Point(455, 186);
+            this.btnPadres.Name = "btnPadres";
+            this.btnPadres.Size = new System.Drawing.Size(111, 103);
+            this.btnPadres.TabIndex = 69;
+            this.btnPadres.UseVisualStyleBackColor = true;
+            // 
+            // btnAlumnos
+            // 
+            this.btnAlumnos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlumnos.BackgroundImage")));
+            this.btnAlumnos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlumnos.Location = new System.Drawing.Point(41, 186);
+            this.btnAlumnos.Name = "btnAlumnos";
+            this.btnAlumnos.Size = new System.Drawing.Size(111, 103);
+            this.btnAlumnos.TabIndex = 68;
+            this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.BtnAlumnos_Click_1);
             // 
             // menu_profesores
             // 
