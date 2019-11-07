@@ -18,6 +18,8 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
             InitializeComponent();
             String codigo = id;
+            user.Text = id;
+            user.Visible = false;
             SqlConnection conexion = Conexion.conectar();
             SqlCommand comando = new SqlCommand("SELECT * FROM Secciones sec INNER JOIN Profesores pro ON sec.IdProfesor = pro.IdProfesor WHERE pro.idProfesor=@profe", conexion);
             comando.Parameters.Clear();
@@ -67,7 +69,19 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            frmLogin form = new frmLogin();
+             menu_profesores form = new menu_profesores(user.Text);
+             form.Show();
+             this.Hide();
+        }
+
+        private void User_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            RegistrarAlumno_prof form = new RegistrarAlumno_prof(user.Text);
             form.Show();
             this.Hide();
         }

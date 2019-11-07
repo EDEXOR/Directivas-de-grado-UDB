@@ -20,6 +20,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             String codigo = id;
 
             kodigo = codigo;
+            
 
             SqlConnection conexion = Conexion.conectar();
             SqlCommand comando = new SqlCommand("SELECT * FROM Personas per INNER JOIN Profesores pro ON per.IdPersona = pro.IdPersona WHERE pro.idProfesor=@profe", conexion);
@@ -34,7 +35,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             }
 
             codigoTxt.Text = kodigo;
-            
+            codigoTxt.Visible = false;
             conexion.Close();
 
         }
@@ -73,7 +74,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            frmMenu form = new frmMenu();
+            frmLogin form = new frmLogin();
             form.Show();
             this.Hide();
         }

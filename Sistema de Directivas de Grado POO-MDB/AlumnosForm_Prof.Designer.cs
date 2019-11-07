@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.user = new System.Windows.Forms.Label();
             this.pcbImagen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).BeginInit();
@@ -109,6 +110,7 @@
             this.button1.TabIndex = 57;
             this.button1.Text = "Agregar Alumno";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // dataGridView1
             // 
@@ -132,6 +134,21 @@
             this.label1.Text = "Listado de alumnos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // user
+            // 
+            this.user.AutoSize = true;
+            this.user.BackColor = System.Drawing.Color.Transparent;
+            this.user.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.user.Location = new System.Drawing.Point(180, 111);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(21, 19);
+            this.user.TabIndex = 62;
+            this.user.Text = "A";
+            this.user.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.user.Click += new System.EventHandler(this.User_Click);
+            // 
             // pcbImagen
             // 
             this.pcbImagen.Image = global::Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.icono_alumno;
@@ -148,6 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.user);
             this.Controls.Add(this.secName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRegresar);
@@ -177,5 +195,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pcbImagen;
+        private System.Windows.Forms.Label user;
     }
 }
