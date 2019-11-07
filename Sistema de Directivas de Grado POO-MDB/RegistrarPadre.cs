@@ -99,7 +99,10 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 SqlDataReader drr = com.ExecuteReader();
                 conexioooon.Close();
 
-                MessageBox.Show("Se agrego bien paloma", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Padre de familia agregado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                PadresForm form = new PadresForm();
+                form.Show();
+                this.Hide();
             }
             else
             {

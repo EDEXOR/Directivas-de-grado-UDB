@@ -67,3 +67,35 @@ C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Gra
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.ModificarPadre.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.ModificarProfesor.resources
 C:\Users\dvasq\Source\Repos\Directivas-de-grado-UDB\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AgregarAlumno_prof.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.exe.config
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.exe
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\bin\Debug\Sistema de Directivas de Grado POO-MDB.pdb
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csprojAssemblyReference.cache
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AgregarAlumno.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AgregarAlumno_prof.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AgregarPadre.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AlumnosForm.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.AlumnosForm_Prof.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Creditos.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Directiva_prof.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Inicio.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.frmLogin.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.frmMenu.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.menu_profesores.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.ModificarAlumno.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.ModificarPadre.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.ModificarProfesor.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.PadresForm.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.ProfesoresForm.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.Properties.Resources.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarAlumno.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarAlumno_prof.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarDirectiva.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarPadre.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarProfesor.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.RegistrarUsuario.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema_de_Directivas_de_Grado_POO_MDB.UsuariosForm.resources
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.GenerateResource.cache
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.csproj.CoreCompileInputs.cache
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.exe
+C:\Users\dvasq\OneDrive\Documents\proyecto\Sistema de Directivas de Grado POO-MDB\obj\Debug\Sistema de Directivas de Grado POO-MDB.pdb

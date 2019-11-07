@@ -98,7 +98,7 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             SqlDataReader registrooo1 = comandooo1.ExecuteReader();
             while (registroo1.Read())
             {
-                MessageBox.Show("Se agrego bien paloma", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se agregó con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             conexiooon.Close();
         }

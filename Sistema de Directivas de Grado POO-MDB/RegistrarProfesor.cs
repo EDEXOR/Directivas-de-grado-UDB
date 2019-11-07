@@ -137,7 +137,10 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
                 SqlDataReader drrr = cm3.ExecuteReader();
                 conexion6.Close();
 
-                MessageBox.Show("Se agrego bien paloma", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Profesor agregado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ProfesoresForm form = new ProfesoresForm();
+                form.Show();
+                this.Hide();
             }
             else
             {

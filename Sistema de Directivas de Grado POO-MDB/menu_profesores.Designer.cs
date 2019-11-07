@@ -35,7 +35,6 @@
             this.lblDirectivas = new System.Windows.Forms.Label();
             this.lblAlumnos = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnAjustes = new System.Windows.Forms.Button();
             this.codigoTxt = new System.Windows.Forms.Label();
             this.btnDirectivas = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
@@ -75,7 +74,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.Location = new System.Drawing.Point(636, 244);
+            this.btnSalir.Location = new System.Drawing.Point(633, 199);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(110, 45);
             this.btnSalir.TabIndex = 67;
@@ -124,19 +123,6 @@
             this.lblTitulo.TabIndex = 63;
             this.lblTitulo.Text = "Sistema de Directivas\r\nde Grado";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAjustes
-            // 
-            this.btnAjustes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjustes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjustes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAjustes.Location = new System.Drawing.Point(636, 172);
-            this.btnAjustes.Name = "btnAjustes";
-            this.btnAjustes.Size = new System.Drawing.Size(110, 45);
-            this.btnAjustes.TabIndex = 62;
-            this.btnAjustes.Text = "Ajustes";
-            this.btnAjustes.UseVisualStyleBackColor = false;
             // 
             // codigoTxt
             // 
@@ -191,7 +177,6 @@
             this.Controls.Add(this.lblDirectivas);
             this.Controls.Add(this.lblAlumnos);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.btnAjustes);
             this.MaximizeBox = false;
             this.Name = "menu_profesores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -212,7 +197,6 @@
         private System.Windows.Forms.Label lblDirectivas;
         private System.Windows.Forms.Label lblAlumnos;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Button btnAjustes;
         private System.Windows.Forms.Label codigoTxt;
     }
 }

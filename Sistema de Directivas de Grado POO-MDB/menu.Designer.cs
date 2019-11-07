@@ -29,35 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
-            this.btnAjustes = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblPadres = new System.Windows.Forms.Label();
             this.lblAlumnos = new System.Windows.Forms.Label();
             this.lblDirectivas = new System.Windows.Forms.Label();
             this.lblProfesores = new System.Windows.Forms.Label();
-            this.lblUsuarios = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnProfesores = new System.Windows.Forms.Button();
             this.btnDirectivas = new System.Windows.Forms.Button();
             this.btnPadres = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
-            this.btnDatos = new System.Windows.Forms.Button();
-            this.lblDatos = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btnAjustes
-            // 
-            this.btnAjustes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjustes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjustes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAjustes.Location = new System.Drawing.Point(678, 186);
-            this.btnAjustes.Name = "btnAjustes";
-            this.btnAjustes.Size = new System.Drawing.Size(110, 45);
-            this.btnAjustes.TabIndex = 30;
-            this.btnAjustes.Text = "Ajustes";
-            this.btnAjustes.UseVisualStyleBackColor = false;
             // 
             // lblTitulo
             // 
@@ -66,7 +48,7 @@
             this.lblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTitulo.Location = new System.Drawing.Point(205, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(110, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(402, 88);
             this.lblTitulo.TabIndex = 31;
@@ -129,45 +111,19 @@
             this.lblProfesores.Text = "Profesores";
             this.lblProfesores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblUsuarios
-            // 
-            this.lblUsuarios.AutoSize = true;
-            this.lblUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblUsuarios.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarios.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblUsuarios.Location = new System.Drawing.Point(499, 376);
-            this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(108, 28);
-            this.lblUsuarios.TabIndex = 40;
-            this.lblUsuarios.Text = "Usuarios";
-            this.lblUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Maroon;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.Location = new System.Drawing.Point(678, 247);
+            this.btnSalir.Location = new System.Drawing.Point(454, 213);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(110, 45);
             this.btnSalir.TabIndex = 41;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.BackgroundImage")));
-            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Location = new System.Drawing.Point(496, 270);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(111, 103);
-            this.btnUsuarios.TabIndex = 46;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnProfesores
             // 
@@ -217,52 +173,22 @@
             this.btnAlumnos.UseVisualStyleBackColor = true;
             this.btnAlumnos.Click += new System.EventHandler(this.Alumnos_Click);
             // 
-            // btnDatos
-            // 
-            this.btnDatos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDatos.BackgroundImage")));
-            this.btnDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDatos.Location = new System.Drawing.Point(496, 113);
-            this.btnDatos.Name = "btnDatos";
-            this.btnDatos.Size = new System.Drawing.Size(111, 103);
-            this.btnDatos.TabIndex = 47;
-            this.btnDatos.UseVisualStyleBackColor = true;
-            // 
-            // lblDatos
-            // 
-            this.lblDatos.AutoSize = true;
-            this.lblDatos.BackColor = System.Drawing.Color.Transparent;
-            this.lblDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDatos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDatos.Location = new System.Drawing.Point(453, 219);
-            this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(200, 28);
-            this.lblDatos.TabIndex = 48;
-            this.lblDatos.Text = "Centro de datos";
-            this.lblDatos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(814, 450);
-            this.Controls.Add(this.lblDatos);
-            this.Controls.Add(this.btnDatos);
-            this.Controls.Add(this.btnUsuarios);
+            this.ClientSize = new System.Drawing.Size(615, 450);
             this.Controls.Add(this.btnProfesores);
             this.Controls.Add(this.btnDirectivas);
             this.Controls.Add(this.btnPadres);
             this.Controls.Add(this.btnAlumnos);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.lblUsuarios);
             this.Controls.Add(this.lblProfesores);
             this.Controls.Add(this.lblDirectivas);
             this.Controls.Add(this.lblAlumnos);
             this.Controls.Add(this.lblPadres);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.btnAjustes);
             this.MaximizeBox = false;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -273,21 +199,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnAjustes;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblPadres;
         private System.Windows.Forms.Label lblAlumnos;
         private System.Windows.Forms.Label lblDirectivas;
         private System.Windows.Forms.Label lblProfesores;
-        private System.Windows.Forms.Label lblUsuarios;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAlumnos;
         private System.Windows.Forms.Button btnPadres;
         private System.Windows.Forms.Button btnDirectivas;
         private System.Windows.Forms.Button btnProfesores;
-        private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.Button btnDatos;
-        private System.Windows.Forms.Label lblDatos;
     }
 }

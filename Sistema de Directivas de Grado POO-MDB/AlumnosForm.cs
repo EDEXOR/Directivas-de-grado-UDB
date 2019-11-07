@@ -22,11 +22,12 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private void AlumnosForm_Load(object sender, EventArgs e)
         {
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT Grado FROM Grados", conexion);
+            SqlCommand comando = new SqlCommand("SELECT IdGrado, Grado FROM Grados", conexion);
             SqlDataReader registro = comando.ExecuteReader();
 
             while (registro.Read())
             {
+                cmbGrado.ValueMember = registro["IdGrado"].ToString();
                 cmbGrado.Items.Add(registro["Grado"].ToString());
             }
             conexion.Close();
@@ -37,12 +38,13 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
             cmbSeccion.Items.Clear();
             cmbSeccion.Enabled = true;
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT Seccion FROM Secciones sec INNER JOIN Grados gra ON sec.IdGrado = gra.IdGrado WHERE gra.Grado=@grado", conexion);
+            SqlCommand comando = new SqlCommand("SELECT IdSeccion, Seccion FROM Secciones sec INNER JOIN Grados gra ON sec.IdGrado = gra.IdGrado WHERE gra.Grado=@grado", conexion);
             comando.Parameters.Clear();
             comando.Parameters.AddWithValue("@grado", Int32.Parse(cmbGrado.Text));
             SqlDataReader registro = comando.ExecuteReader();
             while (registro.Read())
             {
+                cmbSeccion.ValueMember = registro["IdSeccion"].ToString();
                 cmbSeccion.Items.Add(registro["Seccion"].ToString());
             }
             conexion.Close();
@@ -51,11 +53,11 @@ namespace Sistema_de_Directivas_de_Grado_POO_MDB
         private void CmbSeccion_SelectedIndexChanged(object sender, EventArgs e)
         {
             SqlConnection conexion = Conexion.conectar();
-            SqlCommand comando = new SqlCommand("SELECT alu.Carnet, per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido FROM Alumnos alu" +
+            SqlCommand comando = new SqlCommand("SELECT sec.IdSeccion, alu.Carnet, per.PrimerNombre, per.SegundoNombre, per.PrimerApellido, per.SegundoApellido FROM Alumnos alu" +
                 " INNER JOIN Personas per ON alu.IdPersona = per.IdPersona" +
-                " INNER JOIN Secciones sec ON alu.IdSeccion = sec.IdSeccion WHERE sec.Seccion = @seccion", conexion);
+                " INNER JOIN Secciones sec ON alu.IdSeccion = sec.IdSeccion WHERE sec.IdSeccion = @seccion", conexion);
             comando.Parameters.Clear();
-            comando.Parameters.AddWithValue("@seccion", cmbSeccion.Text);
+            comando.Parameters.AddWithValue("@seccion", cmbSeccion.ValueMember.ToString());
             SqlDataAdapter da = new SqlDataAdapter(comando);
             DataTable dt = new DataTable();
             da.Fill(dt);
